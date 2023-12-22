@@ -14,23 +14,24 @@ header {
 header h1 {}
 header h1 a {}
 header h1 a img {width: 152px;}
-header .gnb {
+header nav {}
+header nav .gnb {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
 }
-header .gnb li {margin: 0 30px;}
-header .gnb li a {
+header nav .gnb li {margin: 0 30px;}
+header nav .gnb li a {
     font-size: 0.875rem; color: #fff;
     font-weight: bold;
 }
-header .gnb li .lnb {display: none;}
-header .gnb li .lnb li {}
-header .gnb li .lnb li a {}
-header .gnb li .lnb li .lnb_sub {}
-header .gnb li .lnb li .lnb_sub li {}
-header .gnb li .lnb li .lnb_sub li a {}
+header nav .gnb li .lnb {display: none;}
+header nav .gnb li .lnb li {}
+header nav .gnb li .lnb li a {}
+header nav .gnb li .lnb li .lnb_sub {}
+header nav .gnb li .lnb li .lnb_sub li {}
+header nav .gnb li .lnb li .lnb_sub li a {}
 header .headerRight {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
@@ -90,32 +91,41 @@ main .page1 .bnr .bnr2 {
 main .page1 .showPage {}
 main .page1 .showPage a {}
 main .page1 .showPage a img {}
-main .page1 .showPage .currentPage {}
-main .page1 .showPage .allPage {}
+main .page1 .showPage .pageBtn {}
+main .page1 .showPage .pageBtn .currentPage {}
+main .page1 .showPage .pageBtn .allPage {}
 /* 본문 2페이지 */
 main .page2 {}
 main .page2 h1 {}
 main .page2 aside {}
 main .page2 aside a {}
-main .page2 .rightImg {}
-main .page2 .rightImg .coffeeStory {}
-main .page2 .rightImg .coffeeStory li {}
-main .page2 .rightImg .coffeeStory li a {}
-main .page2 .rightImg .coffeeStory li a img {}
-main .page2 .rightImg .dessertStory {}
-main .page2 .rightImg .dessertStory li {}
-main .page2 .rightImg .dessertStory li a {}
-main .page2 .rightImg .dessertStory li a img {}
-main .page2 .rightImg .deliStory {}
-main .page2 .rightImg .deliStory li {}
-main .page2 .rightImg .deliStory li a {}
-main .page2 .rightImg .deliStory li a img {}
+main .page2 aside a span {}
+main .page2 .right {}
+main .page2 .right .rightImg {}
+main .page2 .right .rightImg .coffeeStory {}
+main .page2 .right .rightImg .coffeeStory li {}
+main .page2 .right .rightImg .coffeeStory li a {}
+main .page2 .right .rightImg .coffeeStory li a img {}
+main .page2 .right .rightImg .dessertStory {}
+main .page2 .right .rightImg .dessertStory li {}
+main .page2 .right .rightImg .dessertStory li a {}
+main .page2 .right .rightImg .dessertStory li a img {}
+main .page2 .right .rightImg .deliStory {}
+main .page2 .right .rightImg .deliStory li {}
+main .page2 .right .rightImg .deliStory li a {}
+main .page2 .right .rightImg .deliStory li a img {}
+main .page2 .right .imgInfo {}
+main .page2 .right .imgInfo a {}
+main .page2 .right .imgInfo a img {}
+main .page2 .right .imgInfo .currentMenu {}
+main .page2 .right .imgInfo .currentMenu .detailed {}
 /* 본문 3페이지 */
 main .page3 {}
-main .page3 h1 {}
-main .page3 h2 {}
-main .page3 h3 {}
-main .page3 p {}
+main .page3 .contents {}
+main .page3 .contents h1 {}
+main .page3 .contents h2 {}
+main .page3 .contents h3 {}
+main .page3 .contents p {}
 /* 본문 4페이지 */
 main .page4 {}
 main .page4 h1 {}
