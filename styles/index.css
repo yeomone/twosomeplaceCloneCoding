@@ -1,12 +1,127 @@
-.wrap {}
-.wrap .leftMenu {}
-.wrap .leftMenu h1 {}
-.wrap .leftMenu h1 a {}
-.wrap .leftMenu h1 a img {}
-.wrap .leftMenu .gnb {}
-.wrap .leftMenu .gnb li {}
-.wrap .leftMenu .gnb li h2 {}
-.wrap .leftMenu .gnb li h2 a {}
-.wrap .leftMenu .gnb li .lnb {}
-.wrap .leftMenu .gnb li .lnb li {}
-.wrap .leftMenu .gnb li .lnb li h3 {}
+/* 빠른메뉴 */
+.sideMenu {}
+.sideMenu a {}
+.sideMenu a img {}
+.sideMenu .topBtn {}
+/* header */
+header {}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header .gnb {}
+header .gnb li {}
+header .gnb li a {}
+header .gnb li .lnb {}
+header .gnb li .lnb li {}
+header .gnb li .lnb li a {}
+header .gnb li .lnb li .lnb_sub {}
+header .gnb li .lnb li .lnb_sub li {}
+header .gnb li .lnb li .lnb_sub li a {}
+header .headerRight {}
+header .headerRight .lang {}
+header .headerRight .allMenu {}
+header .headerRight .allMenu img {}
+/* 전체메뉴 */
+header .allMenuWrap {}
+header .allMenuWrap a {}
+header .allMenuWrap .leftMenu {}
+header .allMenuWrap .leftMenu a {}
+header .allMenuWrap .leftMenu a img {}
+header .allMenuWrap .leftMenu .gnb {}
+header .allMenuWrap .leftMenu .gnb li {}
+header .allMenuWrap .leftMenu .gnb li a {}
+header .allMenuWrap .leftMenu .gnb li .lnb {}
+header .allMenuWrap .leftMenu .gnb li .lnb li {}
+header .allMenuWrap .leftMenu .gnb li .lnb li a {}
+header .allMenuWrap .leftMenu .gnb li .lnb li .lnbSub {}
+header .allMenuWrap .leftMenu .gnb li .lnb li .lnbSub li {}
+header .allMenuWrap .leftMenu .gnb li .lnb li .lnbSub li a {}
+header .allMenuWrap .rightMenu {}
+header .allMenuWrap .rightMenu .rightTop {}
+header .allMenuWrap .rightMenu .rightTop a {}
+header .allMenuWrap .rightMenu .rightBtm {}
+header .allMenuWrap .rightMenu .rightBtm a {}
+header .allMenuWrap .rightMenu .rightBtm a img {}
+/* main */
+main {}
+/* 페이지바 */
+main .pageBar {}
+main .pageBar .currentPageNum {}
+main .pageBar .allBar {}
+main .pageBar .allBar .currentBar {}
+main .pageBar .totalPageNum {}
+/* 본문 1페이지 */
+main .page1 {}
+main .page1 .bnr {}
+main .page1 .bnr .bnr1 {}
+main .page1 .bnr .bnr2 {}
+main .page1 .showPage {}
+main .page1 .showPage a {}
+main .page1 .showPage a img {}
+main .page1 .showPage .currentPage {}
+main .page1 .showPage .allPage {}
+/* 본문 2페이지 */
+main .page2 {}
+main .page2 h1 {}
+main .page2 aside {}
+main .page2 aside a {}
+main .page2 .rightImg {}
+main .page2 .rightImg .coffeeStory {}
+main .page2 .rightImg .coffeeStory li {}
+main .page2 .rightImg .coffeeStory li a {}
+main .page2 .rightImg .coffeeStory li a img {}
+main .page2 .rightImg .dessertStory {}
+main .page2 .rightImg .dessertStory li {}
+main .page2 .rightImg .dessertStory li a {}
+main .page2 .rightImg .dessertStory li a img {}
+main .page2 .rightImg .deliStory {}
+main .page2 .rightImg .deliStory li {}
+main .page2 .rightImg .deliStory li a {}
+main .page2 .rightImg .deliStory li a img {}
+/* 본문 3페이지 */
+main .page3 {}
+main .page3 h1 {}
+main .page3 h2 {}
+main .page3 h3 {}
+main .page3 p {}
+/* 본문 4페이지 */
+main .page4 {}
+main .page4 h1 {}
+main .page4 p {}
+main .page4 p em {}
+main .page4 ul {}
+main .page4 ul li {}
+main .page4 ul li h2 {}
+main .page4 ul li h2 a {}
+main .page4 ul li p {}
+/* 본문 5페이지 */
+main .page5 {}
+main .page5 h1 {}
+main .page5 h2 {}
+main .page5 p {}
+main .page5 .page5Link {}
+main .page5 .page5Link a {}
+/* 본문 6페이지 */
+main .page6 {}
+main .page6 h1 {}
+main .page6 h2 {}
+main .page6 ul {}
+main .page6 ul li {}
+main .page6 ul li a {}
+main .page6 ul li a p {}
+/* footer */
+footer {}
+footer .footerTop {}
+footer .footerTop .topLeft {}
+footer .footerTop .topLeft a {}
+footer .footerTop .topRight {}
+footer .footerTop .topRight dl {}
+footer .footerTop .topRight dl dt {}
+footer .footerTop .topRight dl dt dd {}
+footer .footerBtm {}
+footer .footerBtm .btmMenu {}
+footer .footerBtm .btmMenu a {}
+footer .footerBtm address {}
+footer .sns {}
+footer .sns a {}
+footer .sns a img {}
