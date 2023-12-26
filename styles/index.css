@@ -1,68 +1,46 @@
-* {background-color: cadetblue;}
 /* 빠른메뉴 */
-.sideMenu {display: none;}
+.sideMenu {}
 .sideMenu a {}
 .sideMenu a img {}
 .sideMenu .topBtn {}
 /* header */
-header {
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
 header h1 {}
 header h1 a {}
-header h1 a img {width: 152px;}
+header h1 a img {}
+/* nav */
 header nav {}
-header nav .gnb {
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-}
-header nav .gnb li {margin: 0 30px;}
-header nav .gnb li a {
-    font-size: 0.875rem; color: #fff;
-    font-weight: bold;
-}
-header nav .gnb li .lnb {display: none;}
+header nav .gnb {}
+header nav .gnb li {}
+header nav .gnb li a {}
+header nav .gnb li .lnb {}
 header nav .gnb li .lnb li {}
 header nav .gnb li .lnb li a {}
 header nav .gnb li .lnb li .lnb_sub {}
 header nav .gnb li .lnb li .lnb_sub li {}
 header nav .gnb li .lnb li .lnb_sub li a {}
-header .headerRight {
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-header .headerRight .lang {
-    border: 1px solid #fff;
-    border-radius: 100px;
-    padding: 5px 25px;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 0.875rem;
-    margin-right: 40px;
-}
+/* header right */
+header .headerRight {}
+header .headerRight a {}
+header .headerRight .lang {}
 header .headerRight .allMenu {}
 header .headerRight .allMenu img {}
-/* 전체메뉴 */
-header .allMenuWrap {display: none;}
+/* all menu */
+header .allMenuWrap {}
 header .allMenuWrap a {}
+header .allMenuWrap a img {}
 header .allMenuWrap .leftMenu {}
-header .allMenuWrap .leftMenu a {}
-header .allMenuWrap .leftMenu a img {}
+header .allMenuWrap .leftMenu h1 {}
+header .allMenuWrap .leftMenu h1 a {}
+header .allMenuWrap .leftMenu h1 a img {}
 header .allMenuWrap .leftMenu .gnb {}
 header .allMenuWrap .leftMenu .gnb li {}
 header .allMenuWrap .leftMenu .gnb li a {}
-header .allMenuWrap .leftMenu .gnb li .lnb {}
-header .allMenuWrap .leftMenu .gnb li .lnb li {}
-header .allMenuWrap .leftMenu .gnb li .lnb li a {}
-header .allMenuWrap .leftMenu .gnb li .lnb li .lnbSub {}
-header .allMenuWrap .leftMenu .gnb li .lnb li .lnbSub li {}
-header .allMenuWrap .leftMenu .gnb li .lnb li .lnbSub li a {}
+header .allMenuWrap .leftMenu .gnb li a .lnb {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li a {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li a {}
 header .allMenuWrap .rightMenu {}
 header .allMenuWrap .rightMenu .rightTop {}
 header .allMenuWrap .rightMenu .rightTop a {}
@@ -73,97 +51,22 @@ header .allMenuWrap .rightMenu .rightBtm a img {}
 main {}
 /* 페이지바 */
 main .pageBar {}
+main .pageBar p {}
 main .pageBar .currentPageNum {}
 main .pageBar .allBar {}
 main .pageBar .allBar .currentBar {}
 main .pageBar .totalPageNum {}
-/* 본문 1페이지 */
+/* 본문 1 */
 main .page1 {}
-main .page1 .bnr {}
-main .page1 .bnr .bnr1 {
-    background-image: url(../images/page1-1.jpg);
-    background-size: cover;
-}
-main .page1 .bnr .bnr2 {
-    background-image: url(../images/page1-2.jpg);
-    background-size: cover;
-}
-main .page1 .showPage {}
-main .page1 .showPage a {}
-main .page1 .showPage a img {}
-main .page1 .showPage .pageBtn {}
-main .page1 .showPage .pageBtn .currentPage {}
-main .page1 .showPage .pageBtn .allPage {}
-/* 본문 2페이지 */
+/* 본문 2 */
 main .page2 {}
-main .page2 h1 {}
-main .page2 aside {}
-main .page2 aside a {}
-main .page2 aside a span {}
-main .page2 .right {}
-main .page2 .right .rightImg {}
-main .page2 .right .rightImg .coffeeStory {}
-main .page2 .right .rightImg .coffeeStory li {}
-main .page2 .right .rightImg .coffeeStory li a {}
-main .page2 .right .rightImg .coffeeStory li a img {}
-main .page2 .right .rightImg .dessertStory {}
-main .page2 .right .rightImg .dessertStory li {}
-main .page2 .right .rightImg .dessertStory li a {}
-main .page2 .right .rightImg .dessertStory li a img {}
-main .page2 .right .rightImg .deliStory {}
-main .page2 .right .rightImg .deliStory li {}
-main .page2 .right .rightImg .deliStory li a {}
-main .page2 .right .rightImg .deliStory li a img {}
-main .page2 .right .imgInfo {}
-main .page2 .right .imgInfo a {}
-main .page2 .right .imgInfo a img {}
-main .page2 .right .imgInfo .currentMenu {}
-main .page2 .right .imgInfo .currentMenu .detailed {}
-/* 본문 3페이지 */
+/* 본문 3 */
 main .page3 {}
-main .page3 .contents {}
-main .page3 .contents h1 {}
-main .page3 .contents h2 {}
-main .page3 .contents h3 {}
-main .page3 .contents p {}
-/* 본문 4페이지 */
+/* 본문 4 */
 main .page4 {}
-main .page4 h1 {}
-main .page4 p {}
-main .page4 p em {}
-main .page4 ul {}
-main .page4 ul li {}
-main .page4 ul li h2 {}
-main .page4 ul li h2 a {}
-main .page4 ul li p {}
-/* 본문 5페이지 */
+/* 본문 5 */
 main .page5 {}
-main .page5 h1 {}
-main .page5 h2 {}
-main .page5 p {}
-main .page5 .page5Link {}
-main .page5 .page5Link a {}
-/* 본문 6페이지 */
+/* 본문 6 */
 main .page6 {}
-main .page6 h1 {}
-main .page6 h2 {}
-main .page6 ul {}
-main .page6 ul li {}
-main .page6 ul li a {}
-main .page6 ul li a p {}
 /* footer */
 footer {}
-footer .footerTop {}
-footer .footerTop .topLeft {}
-footer .footerTop .topLeft a {}
-footer .footerTop .topRight {}
-footer .footerTop .topRight dl {}
-footer .footerTop .topRight dl dt {}
-footer .footerTop .topRight dl dt dd {}
-footer .footerBtm {}
-footer .footerBtm .btmMenu {}
-footer .footerBtm .btmMenu a {}
-footer .footerBtm address {}
-footer .sns {}
-footer .sns a {}
-footer .sns a img {}
