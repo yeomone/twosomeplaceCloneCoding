@@ -4,6 +4,9 @@
 .sideMenu a {}
 .sideMenu a img {}
 .sideMenu .topBtn {}
+.sideMenu .topBtn .fa-arrow-up {
+    color: #fff; font-size: 24px;
+}
 /* header */
 header h1 {}
 header h1 a {}
