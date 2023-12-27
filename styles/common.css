@@ -1,0 +1,113 @@
+/* 빠른메뉴 */
+.sideMenu {
+    position: fixed; right: 50px; bottom: 100px;
+}
+.sideMenu a {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    margin: 10px 0;
+}
+.sideMenu .businessLink {
+    background-color: rgba(213,0,55,0.9);
+    border-radius: 500px;
+    padding: 15px 25px;
+    color: #fff;
+    width: max-content;
+    font-size: 1.125rem; font-weight: bold;
+}
+.sideMenu a img {
+    margin-left: 10px;
+    width: 35px;
+}
+.sideMenu .topBtn {
+    position: absolute;
+    right: 0;
+}
+.sideMenu .topBtn .fa-arrow-up {
+    text-align: center;
+    width: 60px; padding: 15px 0;
+    color: #fff; font-size: 24px;
+    background-color: rgba(112, 112, 112, 0.7);
+}
+/* header */
+header {
+    background-color: pink;
+    height: 100px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px ;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+/* nav */
+header nav {}
+header nav .gnb {
+    display: flex; flex-flow: row nowrap;
+}
+header nav .gnb > li {
+    background-color: #fff;
+}
+header nav .gnb > li > a {
+    font-size: 1.125rem;
+    padding-right: 80px;
+    /* color: #fff;  */
+    font-weight: bold;
+    display: block;
+}
+header nav .gnb > li > .lnbBg {
+    background-color: aqua;
+    position: absolute; left: 0; width: 100%; top: 100px;
+}
+header nav .gnb > li > .lnbBg > .lnbContainer {
+    background-color: tomato;
+    width: 1200px; margin: 0 auto; display: block;
+}
+header nav .gnb > li > .lnbBg > .lnbContainer > .lnb {/* display: none; */}
+/* header:hover nav .gnb > li > .lnb {display: flex;} */
+header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li {
+    text-align: left; 
+    padding: 10px 0;
+}
+header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > a {
+    font-weight: bold;
+}
+header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub {}
+header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li {}
+header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li > a {
+    color: #777; font-size: 0.875rem;
+}
+/* header right */
+header .headerRight {}
+header .headerRight a {}
+header .headerRight .lang {
+    border: 1px solid #fff; border-radius: 100px;
+    font-size: 0.875rem; color: #fff;
+    padding: 3px 20px 6px; text-align: center;
+}
+header .headerRight .allMenu {padding-left: 30px;}
+header .headerRight .allMenu img {}
+/* all menu */
+header .allMenuWrap {display: none;}
+header .allMenuWrap a {}
+header .allMenuWrap a img {}
+header .allMenuWrap .leftMenu {}
+header .allMenuWrap .leftMenu h1 {}
+header .allMenuWrap .leftMenu h1 a {}
+header .allMenuWrap .leftMenu h1 a img {}
+header .allMenuWrap .leftMenu .gnb {}
+header .allMenuWrap .leftMenu .gnb li {}
+header .allMenuWrap .leftMenu .gnb li a {}
+header .allMenuWrap .leftMenu .gnb li a .lnb {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li a {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li {}
+header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li a {}
+header .allMenuWrap .rightMenu {}
+header .allMenuWrap .rightMenu .rightTop {}
+header .allMenuWrap .rightMenu .rightTop a {}
+header .allMenuWrap .rightMenu .rightBtm {}
+header .allMenuWrap .rightMenu .rightBtm a {}
+header .allMenuWrap .rightMenu .rightBtm a img {}
