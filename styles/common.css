@@ -1,6 +1,6 @@
 /* 빠른메뉴 */
 .sideMenu {
-    position: fixed; right: 50px; bottom: 100px;
+    position: fixed; right: 30px; bottom: 100px;
 }
 .sideMenu a {
     display: flex; flex-flow: row nowrap;
@@ -31,7 +31,7 @@
 }
 /* header */
 header {
-    background-color: pink;
+    /* background-color: pink; */
     height: 100px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
@@ -47,16 +47,17 @@ header nav .gnb {
     display: flex; flex-flow: row nowrap;
 }
 header nav .gnb > li {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 header nav .gnb > li > a {
     font-size: 1.125rem;
     padding-right: 80px;
-    /* color: #fff;  */
+    color: #fff; 
     font-weight: bold;
     display: block;
 }
 header nav .gnb > li > .lnbBg {
+    display: none;
     background-color: aqua;
     position: absolute; left: 0; width: 100%; top: 100px;
 }
