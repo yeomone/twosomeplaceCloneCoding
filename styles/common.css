@@ -58,6 +58,7 @@ header {
     height: 100px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     padding: 40px 50px ;
 }
 header .default {}
@@ -69,7 +70,7 @@ header h1 a img {}
 /* nav */
 header nav {}
 header nav .gnb {
-    display: flex; flex-flow: row nowrap;
+    display: flex; flex-flow: row nowrap; 
 }
 header nav .gnb > li {
     position: relative;
@@ -83,7 +84,6 @@ header nav .gnb > li > a {
     color: #fff; 
     font-weight: bold;
     display: block;
-    margin-bottom: 30px;
 }
 header nav .gnb > li > .lnbBg {}
 header nav .gnb > li > .lnbBg > .lnbContainer {
@@ -115,7 +115,9 @@ header nav .subAllBg {
     top: 0; left: 0;
 }
 /* header right */
-header .headerRight {}
+header .headerRight {
+    display: flex; flex-flow: row nowrap;
+}
 header .headerRight a {}
 header .headerRight .lang {
     border: 1px solid #fff; border-radius: 100px;
