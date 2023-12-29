@@ -31,10 +31,6 @@ main .bnrPage .bnr .bnr1 {}
 main .bnrPage .bnr .bnr1 img {}
 main .bnrPage .bnr .bnr2 {}
 main .bnrPage .bnr .bnr2 img {display: none;}
-main .bnrPage .bnr .bnr1 img, main .bnrPage .bnr .bnr2 img {
-    position: absolute; left: 0; top: 0;
-    z-index: -999;
-}
 main .bnrPage .showPage {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
@@ -44,13 +40,15 @@ main .bnrPage .showPage {
     padding: 5px 20px 8px;
     text-align: center; margin: 0 auto;
     border-radius: 500px;
+    position: absolute;
+    bottom: 50px; left: 45%;
 }
 main .bnrPage .showPage a {}
 main .bnrPage .showPage .prev {}
 main .bnrPage .showPage .prev img {}
 main .bnrPage .showPage .pageBtn {}
-main .bnrPage .showPage .pageBtn .currentPage {}
-main .bnrPage .showPage .pageBtn .allPage {}
+main .bnrPage .showPage .pageBtn .currentPage {color: #fff; font-weight: bold;}
+main .bnrPage .showPage .pageBtn .allPage {color: #999; font-weight: bold;}
 main .bnrPage .showPage .next {}
 main .bnrPage .showPage .next img {}
 main .bnrPage .mobileBnr {display: none;}
