@@ -36,7 +36,7 @@ header {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     text-align: center;
-    padding: 30px ;
+    padding: 40px 50px ;
 }
 header h1 {}
 header h1 a {}
