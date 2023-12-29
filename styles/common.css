@@ -1,3 +1,27 @@
+/* main */
+main {}
+/* 페이지바 */
+main .pageBar {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between; align-items: center;
+    position: fixed;
+    right: 50px; top: 40vh;
+}
+main .pageBar p {
+    font-weight: 600;
+    font-size: 1.125rem; font-family: kanit;
+}
+main .pageBar .currentPageNum {padding-bottom: 10px;}
+main .pageBar .allBar {
+    background-color: rgba(120,120,120,0.2); 
+    width: 2px; height: 120px;
+}
+main .pageBar .allBar .currentBar {
+    display: block;
+    background-color: #000; 
+    width: 2px; height: 20px;
+}
+main .pageBar .totalPageNum {padding-top: 10px;}
 /* 빠른메뉴 */
 .sideMenu {
     position: fixed; right: 30px; bottom: 100px;
@@ -31,11 +55,10 @@
 }
 /* header */
 header {
-    background-color: pink;
     height: 100px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    text-align: center;
+    /* text-align: center; */
     padding: 40px 50px ;
 }
 header h1 {}
@@ -43,41 +66,47 @@ header h1 a {}
 header h1 a img {}
 /* nav */
 header nav {}
-header nav .gnb {
+header nav .subAllBg {
+    background-color: aqua;
+    position: absolute;
+    width: 100%; 
+}
+header nav .subAllBg .gnb {
     display: flex; flex-flow: row nowrap;
 }
-header nav .gnb > li {
+header nav .subAllBg .gnb > li {
     /* background-color: #fff; */
+    position: relative;
 }
-header nav .gnb > li > a {
+header nav .subAllBg .gnb > li > a {
     font-size: 1.125rem;
     padding-right: 80px;
     color: #fff; 
     font-weight: bold;
     display: block;
 }
-header nav .gnb > li > .lnbBg {
-    display: none;
-    background-color: aqua;
-    position: absolute; left: 0; width: 100%; top: 100px;
+header nav .subAllBg .gnb > li > .lnbBg {
+    /* display: none; */
+    /* position: absolute;  */
 }
-header nav .gnb > li > .lnbBg > .lnbContainer {
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer {
     background-color: tomato;
-    width: 1200px; margin: 0 auto; display: block;
+    width: 100%;
 }
-header nav .gnb > li > .lnbBg > .lnbContainer > .lnb {/* display: none; */}
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer > .lnb {/* display: none; */}
 /* header:hover nav .gnb > li > .lnb {display: flex;} */
-header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li {
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer > .lnb > li {
     text-align: left; 
     padding: 10px 0;
 }
-header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > a {
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer > .lnb > li > a {
     font-weight: bold;
 }
-header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub {}
-header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li {}
-header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li > a {
-    color: #777; font-size: 0.875rem;
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub {}
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li {}
+header nav .subAllBg .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li > a {
+    color: #777; font-size: 0.875rem; padding-top: 10px;
+    display: block;
 }
 /* header right */
 header .headerRight {}
