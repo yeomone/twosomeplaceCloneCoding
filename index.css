@@ -1,0 +1,130 @@
+/* body {background-color: cadetblue;} */
+/* 본문 section 1 */
+main .bnrPage {height: 100vh;}
+main .bnrPage .bnr {}
+main .bnrPage .bnr a {}
+main .bnrPage .bnr .bnr1 {
+    display: block; width: 100vw; height: 100vh;
+    position: absolute; top: 0;
+    background-image: url(../images/bnr1.jpg);
+    background-position: center top;
+    background-size: cover;
+    z-index: -9999;
+}
+main .bnrPage .bnr .bnr2 {
+    display: none;
+    /* display: block;  */
+    width: 100vw; height: 100vh;
+    position: absolute; top: 0;
+    background-image: url(../images/bnr2.jpg);
+    background-position: center top;
+    z-index: -9999;
+}
+main .bnrPage .showPage {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    width: 240px;
+    padding: 12px 20px 15px;
+    text-align: center; margin: 0 auto;
+    border-radius: 500px;
+    position: absolute;
+    bottom: 30px; left: 45%;
+}
+main .bnrPage .showPage a {}
+main .bnrPage .showPage .prev {}
+main .bnrPage .showPage .prev img {}
+main .bnrPage .showPage .pageBtn {}
+main .bnrPage .showPage .pageBtn .currentPage {color: #fff; font-weight: bold;}
+main .bnrPage .showPage .pageBtn .allPage {color: #999; font-weight: bold;}
+main .bnrPage .showPage .next {}
+main .bnrPage .showPage .next img {}
+/* 본문 section 1 모바일 버전 */
+main .bnrPage .mobileBnr {display: none;}
+/* 본문 section 2 */
+main .menuStory {
+    /* height: 100vh; */
+    display: flex; flex-flow: column nowrap;
+
+}
+main .menuStory h1 {
+    font-size: 6rem; font-weight: bold;
+    font-family: Kanit;
+    position: relative;
+}
+main .menuStory h1 em {
+    content: ''; display: block;
+    position: absolute; left: 600px; bottom: 15px;
+    margin-bottom: 8px;
+    background-color: #d50037; width: 20px; height: 20px;
+}
+main .menuStory .contents {
+    display: flex; flex-flow: row nowrap;
+}
+main .menuStory .contents aside {}
+main .menuStory .contents aside > a {
+    display: flex; flex-flow: column;
+    padding-bottom: 60px;
+}
+main .menuStory .contents aside > a > span {
+    font-weight: 700; font-size: 0.875rem;
+}
+main .menuStory .contents aside > a em {
+    font-weight: bold; font-family: Kanit;
+    font-size: 2rem; 
+    /* border-bottom: 2px solid #000; */
+}
+/* 본문 2 right */
+main .menuStory .contents .right {}
+main .menuStory .contents .right .rightImg {}
+main .menuStory .contents .right .rightImg .coffeeStory {}
+main .menuStory .contents .right .rightImg .coffeeStory > li {}
+main .menuStory .contents .right .rightImg .coffeeStory > li > a {}
+main .menuStory .contents .right .rightImg .coffeeStory > li > a > img {}
+main .menuStory .contents .right .rightImg .coffeeStory > li > a > img:first-child {}
+main .menuStory .contents .right .rightImg .dessertStory {}
+main .menuStory .contents .right .rightImg .dessertStory > li {}
+main .menuStory .contents .right .rightImg .dessertStory > li > a {}
+main .menuStory .contents .right .rightImg .dessertStory > li > a > img {}
+main .menuStory .contents .right .rightImg .deliStory {}
+main .menuStory .contents .right .rightImg .deliStory > li {}
+main .menuStory .contents .right .rightImg .deliStory > li > a {}
+main .menuStory .contents .right .rightImg .deliStory > li > a > img {}
+/* right img 공통 css */
+main .menuStory .contents .right .rightImg .coffeeStory > li > a,
+main .menuStory .contents .right .rightImg .dessertStory > li > a,
+main .menuStory .contents .right .rightImg .deliStory > li > a {}
+main .menuStory .contents .right .rightImg .coffeeStory > li > a > img,
+main .menuStory .contents .right .rightImg .dessertStory > li > a > img,
+main .menuStory .contents .right .rightImg .deliStory > li > a > img {
+    width: 488px;
+}
+/* imginfo */
+main .menuStory .contents .right .imgInfo {
+    background-color: #000; width: 424px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; text-align: center;
+    padding: 17px 20px 13px;
+}
+main .menuStory .contents .right .imgInfo a {}
+main .menuStory .contents .right .imgInfo .prev {}
+main .menuStory .contents .right .imgInfo .prev > img {}
+main .menuStory .contents .right .imgInfo .currentMenu {}
+main .menuStory .contents .right .imgInfo .currentMenu .detailed {
+    color: #fff; font-weight: 400;
+}
+main .menuStory .contents .right .imgInfo .next {}
+main .menuStory .contents .right .imgInfo .next > img {}
+/* 본문 section 3 */
+main .aList {}
+main .aList .contents {
+    height: 100vh;
+    background-image: url(../images/main_alist_pc.jpg);
+    background-position: center; background-size: cover;
+}
+main .aList .contents .txt {padding: 20px;}
+main .aList .contents .txt h1 {font-size: 6rem;}
+main .aList .contents .txt h2 {font-size: 2rem;}
+main .aList .contents .txt h3 {font-size: 1.5rem;}
+main .aList .contents .txt p {font-size: 1.125rem; width: 463px; color: #534d49;}
