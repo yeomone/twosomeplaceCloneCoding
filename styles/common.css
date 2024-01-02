@@ -63,7 +63,7 @@ header {
     padding: 50px 65px ;
 }
 header .default {}
-header .hvr {} /* hover 했을 때 block */
+header .hvr {display: none;} /* hover 했을 때 block */
 header h1 a {}
 header h1 a img {}
 /* nav */
@@ -131,7 +131,7 @@ header .headerRight .allMenuHvr {
     padding-left: 30px;
 }
 header .headerRight .allMenuDefault {}
-header .headerRight .allMenuHvr {} /* hover 했을 때 block */
+header .headerRight .allMenuHvr {display: none;} /* hover 했을 때 block */
 header .headerRight .allMenuHvr img {}
 header .headerRight .allMenu img {}
 /* hover 없애고 자바스크립트 적용

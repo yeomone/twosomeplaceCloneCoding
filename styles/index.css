@@ -44,8 +44,9 @@ main .bnrPage .showPage .next img {}
 main .bnrPage .mobileBnr {display: none;}
 /* 본문 section 2 */
 main .menuStory {
-    /* height: 100vh; */
+    height: 100vh; overflow: hidden;
     display: flex; flex-flow: column nowrap;
+    padding: 100px;
 
 }
 main .menuStory h1 {
@@ -53,7 +54,7 @@ main .menuStory h1 {
     font-family: Kanit;
     position: relative;
 }
-main .menuStory h1 em {
+main .menuStory h1::after {
     content: ''; display: block;
     position: absolute; left: 600px; bottom: 15px;
     margin-bottom: 8px;
@@ -61,11 +62,12 @@ main .menuStory h1 em {
 }
 main .menuStory .contents {
     display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
 }
-main .menuStory .contents aside {}
+main .menuStory .contents aside {margin-top: 80px;}
 main .menuStory .contents aside > a {
     display: flex; flex-flow: column;
-    padding-bottom: 60px;
+    padding-bottom: 60px; 
 }
 main .menuStory .contents aside > a > span {
     font-weight: 700; font-size: 0.875rem;
@@ -73,11 +75,19 @@ main .menuStory .contents aside > a > span {
 main .menuStory .contents aside > a em {
     font-weight: bold; font-family: Kanit;
     font-size: 2rem; 
-    /* border-bottom: 2px solid #000; */
+    border-bottom: 3px solid #000;
+    width: max-content;
 }
 /* 본문 2 right */
 main .menuStory .contents .right {}
 main .menuStory .contents .right .rightImg {}
+main .menuStory .contents .right .rightImg .coffeeStory,
+main .menuStory .contents .right .rightImg .dessertStory,
+main .menuStory .contents .right .rightImg .deliStory {
+    display: flex; width: 50vw;
+}
+main .menuStory .contents .right .rightImg .dessertStory,
+main .menuStory .contents .right .rightImg .deliStory {display: none;}
 main .menuStory .contents .right .rightImg .coffeeStory {}
 main .menuStory .contents .right .rightImg .coffeeStory > li {}
 main .menuStory .contents .right .rightImg .coffeeStory > li > a {}
@@ -101,11 +111,15 @@ main .menuStory .contents .right .rightImg .deliStory > li > a > img {
     width: 488px;
 }
 /* imginfo */
-main .menuStory .contents .right .imgInfo {}
+main .menuStory .contents .right .imgInfo {
+    background-color: #000; width: 424px; display: flex;
+    flex-flow: row nowrap; justify-content: space-between;
+    padding: 15px 20px 10px;
+}
 main .menuStory .contents .right .imgInfo a {}
 main .menuStory .contents .right .imgInfo .prev {}
 main .menuStory .contents .right .imgInfo .prev > img {}
 main .menuStory .contents .right .imgInfo .currentMenu {}
-main .menuStory .contents .right .imgInfo .currentMenu .detailed {}
+main .menuStory .contents .right .imgInfo .currentMenu .detailed {color: #fff;}
 main .menuStory .contents .right .imgInfo .next {}
 main .menuStory .contents .right .imgInfo .next > img {}
