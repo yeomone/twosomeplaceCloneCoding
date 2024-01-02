@@ -44,18 +44,20 @@ main .bnrPage .showPage .next img {}
 main .bnrPage .mobileBnr {display: none;}
 /* 본문 section 2 */
 main .menuStory {
-    height: 100vh; /* overflow: hidden; */
-    display: flex; flex-flow: column nowrap;
-    padding-left: 350px; padding-top: 130px;
+    background-color: pink;
+    /* height: 100vh; overflow: hidden; */
+    width: 1320px; margin: 0 auto;
 }
 main .menuStory h1 {
+    /* background-color: yellow; */
+    display: inline-block;
     font-size: 6rem; font-weight: bold;
     font-family: Kanit;
-    position: relative;
+    position: relative; z-index: 999;
 }
 main .menuStory h1::after {
     content: ''; display: block;
-    position: absolute; left: 600px; bottom: 15px;
+    position: absolute; right: -30px; bottom: 13px;
     margin-bottom: 8px;
     background-color: #d50037; width: 20px; height: 20px;
 }
@@ -78,9 +80,8 @@ main .menuStory .contents aside > a em {
     width: max-content;
 }
 /* 본문 2 right */
-main .menuStory {position: relative;}
 main .menuStory .contents .right {
-    width: 55vw; position: absolute; right: 0; top: 190px; z-index: -1;
+    width: 65%;  position: relative; top: -55px;
 }
 main .menuStory .contents .right .rightImg {width: max-content;}
 /* 공통 CSS */
