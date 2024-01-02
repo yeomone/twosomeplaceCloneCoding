@@ -25,6 +25,7 @@ main .pageBar .totalPageNum {padding-top: 10px;}
 /* 빠른메뉴 */
 .sideMenu {
     position: fixed; right: 30px; bottom: 100px;
+    z-index: 9999;
 }
 .sideMenu a {
     display: flex; flex-flow: row nowrap;
