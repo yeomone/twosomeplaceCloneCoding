@@ -1,10 +1,11 @@
 /* body {background-color: cadetblue;} */
 /* 본문 section 1 */
-main .bnrPage {height: 100vh;}
+main .bnrPage {height: 88vh;}
 main .bnrPage .bnr {}
 main .bnrPage .bnr a {}
 main .bnrPage .bnr .bnr1 {
-    display: block; width: 100vw; height: 100vh;
+    display: block; width: 100vw;
+    height: 100%;
     position: absolute; top: 0;
     background-image: url(../images/bnr1.jpg);
     background-position: center top;
@@ -43,99 +44,193 @@ main .bnrPage .showPage .next img {}
 /* 본문 section 1 모바일 버전 */
 main .bnrPage .mobileBnr {display: none;}
 /* 본문 section 2 */
-main .menuStory {
-    background-color: pink;
-    /* height: 100vh; overflow: hidden; */
-    width: 1320px; margin: 0 auto;
+main  .menuStory {
+    height: 100vh; 
+    background-color: aqua;
+    padding-top: 25vh;
 }
-main .menuStory h1 {
+main  .menuStory .menuStoryContainer {
+    background-color: pink;
+    width: 1320px; 
+    margin: 0 auto;
+}
+main  .menuStory .menuStoryContainer h1 {
     /* background-color: yellow; */
     display: inline-block;
     font-size: 6rem; font-weight: bold;
-    font-family: Kanit;
+    font-family: 'Kanit';
     position: relative; z-index: 999;
 }
-main .menuStory h1::after {
+main  .menuStory .menuStoryContainer h1::after {
     content: ''; display: block;
     position: absolute; right: -30px; bottom: 13px;
     margin-bottom: 8px;
     background-color: #d50037; width: 20px; height: 20px;
 }
-main .menuStory .contents {
+main  .menuStory .menuStoryContainer .contents {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
 }
-main .menuStory .contents aside {margin-top: 80px;}
-main .menuStory .contents aside > a {
+main  .menuStory .menuStoryContainer .contents aside {margin-top: 80px;}
+main  .menuStory .menuStoryContainer .contents aside > a {
     display: flex; flex-flow: column;
     padding-bottom: 60px; 
 }
-main .menuStory .contents aside > a > span {
+main  .menuStory .menuStoryContainer .contents aside > a > span {
     font-weight: 700; font-size: 0.875rem;
 }
-main .menuStory .contents aside > a em {
+main  .menuStory .menuStoryContainer .contents aside > a em {
     font-weight: bold; font-family: Kanit;
     font-size: 2rem; 
     border-bottom: 3px solid #000;
     width: max-content;
 }
 /* 본문 2 right */
-main .menuStory .contents .right {
+main  .menuStory .menuStoryContainer .contents .right {
     width: 65%;  position: relative; top: -55px;
 }
-main .menuStory .contents .right .rightImg {width: max-content;}
+main  .menuStory .menuStoryContainer .contents .right .rightImg {width: max-content;}
 /* 공통 CSS */
-main .menuStory .contents .right .rightImg .coffeeStory,
-main .menuStory .contents .right .rightImg .dessertStory,
-main .menuStory .contents .right .rightImg .deliStory {
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {
     display: flex; align-items: flex-end;
 }
-main .menuStory .contents .right .rightImg .coffeeStory li,
-main .menuStory .contents .right .rightImg .dessertStory li,
-main .menuStory .contents .right .rightImg .deliStory  li{
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory li,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory li,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  li{
     width: 176px; margin-right: 30px; position: relative;
 }
-main .menuStory .contents .right .rightImg .coffeeStory .active,
-main .menuStory .contents .right .rightImg .dessertStory .active,
-main .menuStory .contents .right .rightImg .deliStory .active {
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory .active,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory .active,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory .active {
     width: 488px;
 }
-main .menuStory .contents .right .rightImg .coffeeStory > li > a,
-main .menuStory .contents .right .rightImg .dessertStory > li > a,
-main .menuStory .contents .right .rightImg .deliStory  > li > a {
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li > a,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li > a,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  > li > a {
     display: block; 
 }
-main .menuStory .contents .right .rightImg .coffeeStory > li > a > img,
-main .menuStory .contents .right .rightImg .dessertStory > li > a > img,
-main .menuStory .contents .right .rightImg .deliStory  > li > a > img {
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li > a > img,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li > a > img,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  > li > a > img {
     width: 100%;
 }
-main .menuStory .contents .right .rightImg .dessertStory,
-main .menuStory .contents .right .rightImg .deliStory {display: none;}
-main .menuStory .contents .right .rightImg .coffeeStory {}
-main .menuStory .contents .right .rightImg .coffeeStory > li {}
-main .menuStory .contents .right .rightImg .coffeeStory > .active {}
-main .menuStory .contents .right .rightImg .coffeeStory > li > a {}
-main .menuStory .contents .right .rightImg .coffeeStory > li > a > img {}
-main .menuStory .contents .right .rightImg .dessertStory {}
-main .menuStory .contents .right .rightImg .dessertStory > li {}
-main .menuStory .contents .right .rightImg .dessertStory > li > a {}
-main .menuStory .contents .right .rightImg .dessertStory > li > a > img {}
-main .menuStory .contents .right .rightImg .deliStory {}
-main .menuStory .contents .right .rightImg .deliStory > li {}
-main .menuStory .contents .right .rightImg .deliStory > li > a {}
-main .menuStory .contents .right .rightImg .deliStory > li > a > img {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {display: none;}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > .active {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li > a {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li > a > img {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li > a {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li > a > img {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory > li {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory > li > a {}
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory > li > a > img {}
 /* imginfo */
-main .menuStory .contents .right .imgInfo {
+main  .menuStory .menuStoryContainer .contents .right .imgInfo {
     background-color: #000; width: 424px; display: flex;
     flex-flow: row nowrap; justify-content: space-between;
     padding: 15px 20px 10px; position: absolute;
     bottom: -15px; left: 25px;
 }
-main .menuStory .contents .right .imgInfo a {}
-main .menuStory .contents .right .imgInfo .prev {}
-main .menuStory .contents .right .imgInfo .prev > img {}
-main .menuStory .contents .right .imgInfo .currentMenu {}
-main .menuStory .contents .right .imgInfo .currentMenu .detailed {color: #fff;}
-main .menuStory .contents .right .imgInfo .next {}
-main .menuStory .contents .right .imgInfo .next > img {}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo a {}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo .prev {}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo .prev > img {}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo .currentMenu {}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo .currentMenu .detailed {color: #fff;}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo .next {}
+main  .menuStory .menuStoryContainer .contents .right .imgInfo .next > img {}
+/* 본문 section 3 */
+main .aList {height: 100vh;}
+main .aList .contents {
+    height: 100%;
+    background-image: url(../images/main_alist_pc.jpg);
+    background-size: cover;
+    background-position: center bottom 0;
+}
+main .aList .txt {
+    padding-top: 25vh;
+    padding-left: 35vh;
+}
+main .aList .txt * {
+    font-weight: 800; font-family: 'Noto Sans KR';
+    margin-bottom: 10px;
+}
+main .aList .txt h1 {
+    font-size: 6rem; position: relative;
+    display: inline-block;
+}
+main .aList .txt h1::after {
+    content: ''; display: block;
+    position: absolute; right: -35px; bottom: 13px;
+    margin-bottom: 4px;
+    background-color: #d50037; width: 20px; height: 20px;
+}
+main .aList .txt h2 {
+    font-size: 2rem; font-family: 'kanit'; padding: 40px 0;
+}
+main .aList .txt h3 {font-size: 1.5rem;}
+main .aList .txt p {
+    font-size: 1.125rem; font-weight: 400; color: #534d49;
+    width: 500px; line-height: 1.4;
+}
+/* 본문 section 4 */
+main .brandSupport {
+    position: relative; background-color: aqua;
+}
+main .brandSupport h1 {
+    font-size: 6rem; font-weight: 800; display: inline-block; position: relative;
+}
+main .brandSupport h1::after {
+    content: ''; display: block;
+    position: absolute; right: -35px; bottom: 13px;
+    margin-bottom: 4px;
+    background-color: #d50037; width: 20px; height: 20px;
+}
+main .brandSupport .currentPage {
+    background-color: #000; width: 312px; padding: 15px 10px;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    position: absolute; right: 455px; top: 76vh;
+}
+main .brandSupport .currentPage .prev {}
+main .brandSupport .currentPage .prev img {}
+main .brandSupport .currentPage .currentPlace {}
+main .brandSupport .currentPage .currentPlace .detailed {color: #fff; font-weight: 700;}
+main .brandSupport .currentPage .currentPlace .next {}
+main .brandSupport .currentPage .currentPlace .next img {}
+main .brandSupport .contents {background-color: #999;}
+main .brandSupport .contents ul {
+    width: max-content;
+    background-color: #d50037;
+    margin: 0 auto;
+    /* display: flex; overflow: hidden; */
+}
+main .brandSupport .contents ul li {
+    display: flex; flex-flow: row nowrap;
+    position: relative; justify-content: space-between;
+}
+main .brandSupport .contents ul li .sideInfo {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -7px; bottom: 5px;
+}
+main .brandSupport .contents ul li p {}
+main .brandSupport .contents ul li p img {width: 552px;}
+main .brandSupport .contents ul li .title {
+    margin-left: 50px; 
+    margin-top: 30%;
+}
+main .brandSupport .contents ul li .title img {}
+main .brandSupport .contents ul li .title .titleArrow {}
+main .brandSupport .contents ul li .title .titleArrow h2 {}
+main .brandSupport .contents ul li .title .titleArrow h2 a {
+    font-size: 2rem; font-weight: 800; text-decoration: underline 2px;
+}
+main .brandSupport .contents ul li .title .titleArrow h2 a img {width: 30px;}
+main .brandSupport .contents ul li {}
