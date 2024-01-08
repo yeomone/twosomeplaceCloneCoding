@@ -244,3 +244,98 @@ main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow p {
     background-color: yellow;
     margin-top: 30px; font-size: 1.125rem;
 }
+/* 본문 section 5 */
+main .franchise {height: 100vh; background-color: lime;}
+main .franchise .contents {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30vh;
+}
+main .franchise .contents h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'kanit';
+    margin-bottom: 30px;
+}
+main .franchise .contents h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+main .franchise .contents p {
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: #333;
+    width: 450px;
+    margin-bottom: 40px;
+}
+main .franchise .contents .businessLink {}
+main .franchise .contents .businessLink a {
+    width: 240px; background-color: #fff; border: 2px solid #000;
+    font-size: 1.25rem; display: inline-block;
+    font-weight: 700; padding: 20px 15px; 
+}
+main .franchise .contents .businessLink a img {width: 28px; margin-bottom: 5px; margin-left: 20px;}
+/* 본문 section 6 */
+main .notice {
+    /* background-color: aqua; */
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 300px;
+    padding-bottom: 200px;
+    height: 100vh;
+}
+main .notice .title {
+    background-color: yellow;
+    background-image: url(../images/main_news_illust.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 75%;
+    margin-left: 50px;
+}
+main .notice .title h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: 'kanit';
+    margin-bottom: 50px;
+    line-height: 1;
+    position: relative;
+}
+main .notice .title h1::after {
+    content: ''; display: block;
+    position: absolute; right: -35px; bottom: 13px;
+    margin-bottom: 4px;
+    background-color: #d50037; width: 20px; height: 20px;
+}
+main .notice .title h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+main .notice .contents {
+    background-color: lime;
+}
+main .notice .contents a {
+    display: block;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 40px;
+}
+main .notice .contents a:last-child {
+    margin-bottom: 0;
+}
+main .notice .contents a p {}
+main .notice .contents a p em {
+    color: #d50037;
+    font-weight: 500;
+    display: block;
+}
+main .notice .contents a h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 20px 0 15px;
+}
+main .notice .contents a .date {
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
