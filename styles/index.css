@@ -48,11 +48,12 @@ main  .menuStory {
     height: 100vh; 
     background-color: aqua;
     padding-top: 25vh;
+    display: flex; justify-content: center; align-items: center;
 }
 main  .menuStory .menuStoryContainer {
     background-color: pink;
     width: 1320px; 
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 main  .menuStory .menuStoryContainer h1 {
     /* background-color: yellow; */
@@ -146,7 +147,8 @@ main  .menuStory .menuStoryContainer .contents .right .imgInfo .currentMenu .det
 main  .menuStory .menuStoryContainer .contents .right .imgInfo .next {}
 main  .menuStory .menuStoryContainer .contents .right .imgInfo .next > img {}
 /* 본문 section 3 */
-main .aList {height: 100vh;}
+main .aList {height: 100vh;
+}
 main .aList .contents {
     height: 100%;
     background-image: url(../images/main_alist_pc.jpg);
@@ -245,7 +247,8 @@ main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow p {
     margin-top: 30px; font-size: 1.125rem;
 }
 /* 본문 section 5 */
-main .franchise {height: 100vh; background-color: lime;}
+main .franchise {height: 100vh; background-color: lime; 
+    display: flex; justify-content: center; align-items: center; width: 100%;}
 main .franchise .contents {
     text-align: center;
     margin: 0 auto;
@@ -278,7 +281,7 @@ main .franchise .contents .businessLink a {
 main .franchise .contents .businessLink a img {width: 28px; margin-bottom: 5px; margin-left: 20px;}
 /* 본문 section 6 */
 main .notice {
-    /* background-color: aqua; */
+    background-color: aqua;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
