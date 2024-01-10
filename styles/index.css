@@ -63,7 +63,7 @@ main  .menuStory .menuStoryContainer h1 {
     position: relative; z-index: 999;
 }
 main  .menuStory .menuStoryContainer h1::after {
-    /* background-color: #d50037;  */
+    background-color: #d50037; 
     content: ''; display: block;
     position: absolute; right: -30px; bottom: 13px;
     margin-bottom: 8px;
@@ -157,16 +157,12 @@ main .aList .contents {
 }
 main .aList .txtWrap {
     display: flex; 
-    padding-left: 18%;
-    padding-bottom: 20px;
     align-items: center;
     height: 100%; 
-}
-main .aList .txtWrap .txt {
-    /* max-width: 1320px; 
+    max-width: 1320px; 
     margin: 0 auto;
-    padding-top: 25vh; */
 }
+main .aList .txtWrap .txt {}
 main .aList .txtWrap .txt * {
     font-weight: 800; font-family: 'Noto Sans KR';
     margin-bottom: 10px;
@@ -176,19 +172,22 @@ main .aList .txtWrap .txt h1 {
     display: inline-block;
 }
 main .aList .txtWrap .txt h1::after {
-    /* background-color: #d50037;  */
+    background-color: #d50037; 
     content: ''; display: block;
-    position: absolute; right: -35px; bottom: 13px;
-    margin-bottom: 4px;
     width: 20px; height: 20px;
+    position: absolute; 
+    bottom: 13px;
+    right: -40px;
+    margin-bottom: 4px;
 }
 main .aList .txtWrap .txt h2 {
     font-size: 2rem; font-family: 'kanit'; padding: 40px 0;
 }
-main .aList .txtWrap .txt h3 {font-size: 1.5rem;}
+main .aList .txtWrap .txt h3 {font-size: 1.5rem; padding-bottom: 10px;}
 main .aList .txtWrap .txt p {
     font-size: 1.125rem; font-weight: 400; color: #534d49;
-    width: 500px; line-height: 1.4;
+    width: 500px; line-height: 1.4; 
+    line-height: 1.5; font-weight: 500;
 }
 /* 본문 section 4 */
 main .brandSupport {
@@ -209,11 +208,13 @@ main .brandSupport .brandSupportWrap h1 {
     line-height: 1;
 }
 main .brandSupport .brandSupportWrap h1::after {
-    /* background-color: #d50037;  */
+    background-color: #d50037; 
     content: ''; display: block;
-    position: absolute; right: -35px; bottom: 13px;
-    margin-bottom: 4px;
     width: 20px; height: 20px;
+    position: absolute; 
+    bottom: 10px;
+    right: -35px;
+    margin-bottom: 4px;
 }
 main .brandSupport .brandSupportWrap .currentPage {
     background-color: #000; width: 312px; padding: 15px 10px;
@@ -270,7 +271,7 @@ main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow p {
 }
 /* 본문 section 5 */
 main .franchise {
-    background-color: lime; 
+    /* background-color: lime;  */
     height: 100vh; 
     display: flex; justify-content: center; align-items: center; width: 100%;
 }
@@ -284,6 +285,16 @@ main .franchise .contents h1 {
     font-weight: 700;
     font-family: 'kanit';
     margin-bottom: 20px;
+    position: relative;
+}
+main .franchise .contents h1::after {
+    background-color: #d50037; 
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    position: absolute; 
+    bottom: 21px;
+    right: -35px;
+    margin-bottom: 4px;
 }
 main .franchise .contents h2 {
     font-size: 1.5rem;
@@ -309,47 +320,54 @@ main .franchise .contents .businessLink a {
 main .franchise .contents .businessLink a img {width: 28px; margin-bottom: 5px; margin-left: 20px;}
 /* 본문 section 6 */
 main .notice {
-    background-color: aqua;
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
+    /* background-color: aqua; */
     padding: 0 300px;
-    padding-bottom: 200px;
     height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
-main .notice .title {
-    background-color: yellow;
+main .notice .noticeWrap {
+    display: flex; 
+    justify-content: space-between;
+    /* background-color: pink; */
+    max-width: 1320px;
+    width: 90%;
+}
+main .notice .noticeWrap .title {
+    /* background-color: yellow; */
     background-image: url(../images/main_news_illust.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    height: 75%;
-    margin-left: 50px;
 }
-main .notice .title h1 {
+main .notice .noticeWrap .title h1 {
     font-size: 6rem;
     font-weight: 700;
     font-family: 'kanit';
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     line-height: 1;
     position: relative;
+    top: -50px;
 }
-main .notice .title h1::after {
+main .notice .noticeWrap .title h1::after {
     content: ''; display: block;
     position: absolute; right: -35px; bottom: 13px;
     margin-bottom: 4px;
     background-color: #d50037; width: 20px; height: 20px;
 }
-main .notice .title h2 {
+main .notice .noticeWrap .title h2 {
     font-size: 1.25rem;
     font-weight: 700;
 }
 main .notice .contents {
-    background-color: lime;
+    /* background-color: lime; */
+    width: 50%;
 }
 main .notice .contents a {
     display: block;
     border-bottom: 1px solid #e7e7e7;
     margin-bottom: 40px;
+    padding: 0 30px;
 }
 main .notice .contents a:last-child {
     margin-bottom: 0;
@@ -364,6 +382,9 @@ main .notice .contents a h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 20px 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 main .notice .contents a .date {
     color: #333;

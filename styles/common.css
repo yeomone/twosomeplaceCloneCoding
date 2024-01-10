@@ -176,3 +176,70 @@ header .allMenuWrap .rightMenu .rightTop a {}
 header .allMenuWrap .rightMenu .rightBtm {}
 header .allMenuWrap .rightMenu .rightBtm a {}
 header .allMenuWrap .rightMenu .rightBtm a img {}
+/* footer */
+footer * {color: #fff;}
+footer {
+    background-color: #222;
+    width: 100%;
+    padding-bottom: 40px;
+}
+/* footer 상단 */
+footer .ftrTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 50px 0;
+    border-bottom: 2px solid rgba(255,255,255,0.15);
+}
+/* footer 상단 왼쪽 */
+footer .ftrTop .topLeft {
+    display: flex; flex-flow: column nowrap;
+}
+footer .ftrTop .topLeft > a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+footer .ftrTop .topLeft > a:last-child {padding-bottom: 0;}
+/* footer 상단 오른쪽 */
+footer .ftrTop .topRight {
+    display: flex; flex-flow: column nowrap;
+}
+footer .ftrTop .topRight dt {font-weight: 700; padding-bottom: 10px;}
+footer .ftrTop .topRight dd {color: #777; font-size: 0.875rem; padding-bottom: 40px;}
+footer .ftrBtm {
+    max-width: 1320px; margin: 0 auto; padding: 50px 0;
+}
+/* footer 하단 */
+footer .ftrBtm .btmMenu {}
+footer .ftrBtm .btmMenu > a {
+    font-size: 0.875rem; font-weight: 700;
+    margin-right: 30px;
+}
+footer .ftrBtm .btmMenu > a em {color: #f5ce3e; font-weight: 700; font-size: 0.875rem;}
+footer .ftrBtm address {
+    padding-top: 20px;
+    width: 50%;
+}
+footer .ftrBtm address span {
+    color: #777; font-size: 0.875rem; 
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.8;
+}
+footer .ftrBtm address span:last-child {font-size: 0.75rem; padding-top: 20px;}
+footer .ftrBtm address span:nth-child(2):after,
+footer .ftrBtm address span:nth-child(3):after,
+footer .ftrBtm address span:nth-child(5):after {
+    margin: 0 10px;
+    content: ''; display: inline-block;
+    background-color: #777; width: 1px; height: 11px;
+}
+footer .ftrBtm .sns {float: right;}
+footer .ftrBtm .sns > a {padding-left: 10px;}
+footer .ftrBtm .sns > a img {}
+/* 모바일 footer */
+footer .ftrBtm address .mobileAddress {display: none;}
+footer .ftrBtm address .mobileAddress span {}
