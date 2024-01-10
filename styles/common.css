@@ -57,8 +57,10 @@ main .pageBar .totalPageNum {padding-top: 10px;}
 }
 /* header */
 header {
-    /* position: fixed; */
+    z-index: 9999;
+    position: fixed;
     height: 100px;
+    width: 100%;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
@@ -72,26 +74,32 @@ header h1 a img {}
 header nav {}
 header nav .gnb {
     display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; align-items: center;
 }
 header nav .gnb > li {
     position: relative;
+    /* background-color: yellow; */
+    width: 180px;
 }
-header nav .gnb > li:nth-child(3) > a {padding-right: 100px;}
-header nav .gnb > li:nth-child(5) > a {padding-right: 80px;}
+header nav .gnb > li:nth-child(1) {width: 200px;}
+header nav .gnb > li:nth-child(2) {width: 150px;}
+header nav .gnb > li:nth-child(4) {width: 250px;}
+header nav .gnb > li:last-child {width: max-content;}
 header nav .gnb > li > a {
     font-size: 1.125rem;
-    padding-right: 60px;
     color: #fff; 
     font-weight: bold;
     display: block;
 }
-header nav .gnb > li > a {color: #000;} /* hover */
+/* header nav .gnb > li > a {color: #000;} hover */
 header nav .gnb > li > .lnbBg {
-    /* display: none; */
+    display: none;
+    top: 50px;
+    width: 100%;
     position: absolute;
 }
 header nav .gnb > li > .lnbBg > .lnbContainer {
-    /* background-color: tomato; */
+    background-color: tomato;
     width: 100%;
 }
 header nav .gnb > li > .lnbBg > .lnbContainer > .lnb {}
