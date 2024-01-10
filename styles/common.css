@@ -84,7 +84,6 @@ header nav .gnb > li {
 header nav .gnb > li:nth-child(1) {width: 200px;}
 header nav .gnb > li:nth-child(2) {width: 150px;}
 header nav .gnb > li:nth-child(4) {width: 250px;}
-header nav .gnb > li:last-child {width: max-content;}
 header nav .gnb > li > a {
     font-size: 1.125rem;
     color: #fff; 
@@ -117,7 +116,7 @@ header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li > a {
     display: block;
 }
 header nav .subAllBg {
-    /* display: none; */
+    display: none;
     background-color: #fff;
     background-color: rgba(5, 5, 5, 0.5);
     position: absolute;
@@ -135,7 +134,7 @@ header .headerRight .lang {
     font-size: 0.875rem; color: #fff;
     padding: 3px 20px 6px; text-align: center;
 }
-header .headerRight .lang {border: 1px solid #000; border-radius: 100px; color: #000;} /* hover */
+/* header .headerRight .lang {border: 1px solid #000; border-radius: 100px; color: #000;} hover */
 header .headerRight .allMenuDefault,
 header .headerRight .allMenuHvr {
     padding-left: 30px;

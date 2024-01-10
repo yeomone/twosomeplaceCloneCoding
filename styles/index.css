@@ -273,7 +273,27 @@ main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow p {
 main .franchise {
     /* background-color: lime;  */
     height: 100vh; 
-    display: flex; justify-content: center; align-items: center; width: 100%;
+    display: flex; justify-content: center; align-items: center; 
+    width: 100%;
+}
+/* background 점 8개, img 5개 애니메이션 */
+main .franchise .franchiseImg {
+}
+main .franchise .franchiseImg dl {}
+main .franchise .franchiseImg dl dt {
+    color: #fff;
+    background-color: rgba(213,0,55,0.68);
+    width: max-content;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 500px;
+    border-bottom-left-radius: 0;
+}
+main .franchise .franchiseImg dl dd {
+}
+main .franchise .franchiseImg dl dd img {
+    width: 160px;height: 160px;
+    border-radius: 50%;
 }
 main .franchise .contents {
     text-align: center;
