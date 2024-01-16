@@ -271,30 +271,15 @@ main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow p {
 }
 /* 본문 section 5 */
 main .franchise {
-    /* background-color: lime;  */
     height: 100vh; 
     display: flex; justify-content: center; align-items: center; 
     width: 100%;
+    background-color: #F5F5F5;
+    background-image: url(../images/busan1.png),url(../images/chuncheon1.png),url(../images/eulji.png),url(../images/jeju.png),url(../images/skytown.png),url(../images/wangsan.png),url(../images/dot.png),url(../images/dot.png),url(../images/dot.png),url(../images/dot.png),url(../images/dot.png);
+    background-repeat: no-repeat;
+    background-position: 0 10%, 25% 50%, 50% 20%, 75% 80%, 100% 50%, 125% 20%/* dot 위치 적기 6개 */;
 }
-/* background 점 8개, img 5개 애니메이션 */
-main .franchise .franchiseImg {
-}
-main .franchise .franchiseImg dl {}
-main .franchise .franchiseImg dl dt {
-    color: #fff;
-    background-color: rgba(213,0,55,0.68);
-    width: max-content;
-    padding: 5px 10px;
-    font-size: 0.75rem;
-    border-radius: 500px;
-    border-bottom-left-radius: 0;
-}
-main .franchise .franchiseImg dl dd {
-}
-main .franchise .franchiseImg dl dd img {
-    width: 160px;height: 160px;
-    border-radius: 50%;
-}
+@media franchiseBg {}
 main .franchise .contents {
     text-align: center;
     margin: 0 auto;
