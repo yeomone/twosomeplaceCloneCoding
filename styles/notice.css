@@ -30,7 +30,15 @@ main .container .contents #searchFrm fieldset .searchFrmTop {
     justify-content: right; 
     align-items: flex-end;
 }
-main .container .contents #searchFrm fieldset .searchFrmTop .filterWrap {margin-right: 20px;}
+/* main .container .contents #searchFrm fieldset .searchFrmTop .filterWrap {margin-right: 10px;} */
+main .container .contents #searchFrm fieldset .searchFrmTop .filterWrap::after {
+    content: '\f107';
+    position: relative;
+    right: 20px;
+    color: #707070;
+    font-family: Font Awesome 5 Free;
+    font-weight: 600;
+}
 main .container .contents #searchFrm fieldset .searchFrmTop .filterWrap #searchFilter {width: 100px; color: #333; font-weight: 500;}
 main .container .contents #searchFrm fieldset .searchFrmTop #searchFilter option {}
 main .container .contents #searchFrm fieldset .searchFrmTop #searchFilter option {}
