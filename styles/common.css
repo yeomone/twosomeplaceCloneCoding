@@ -92,13 +92,13 @@ header nav .gnb > li > a {
 }
 /* header nav .gnb > li > a {color: #000;} hover */
 header nav .gnb > li > .lnbBg {
-    display: none;
+    /* display: none; */
     top: 50px;
     width: 100%;
     position: absolute;
 }
 header nav .gnb > li > .lnbBg > .lnbContainer {
-    background-color: tomato;
+    /* background-color: tomato; */
     width: 100%;
 }
 header nav .gnb > li > .lnbBg > .lnbContainer > .lnb {}
@@ -116,9 +116,9 @@ header nav .gnb > li > .lnbBg > .lnbContainer > .lnb > li > .lnbSub > li > a {
     display: block;
 }
 header nav .subAllBg {
-    display: none;
+    /* display: none; */
     background-color: #fff;
-    background-color: rgba(5, 5, 5, 0.5);
+    /* background-color: rgba(5, 5, 5, 0.5); */
     position: absolute;
     width: 100%; height: 390px;
     z-index: -20;
