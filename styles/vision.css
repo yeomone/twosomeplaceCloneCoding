@@ -6,9 +6,9 @@ main .container {
     margin: 0 auto;
 }
 main .container .pathWrap {}
-main .container .pathWrap a {color: #707070; font-weight: 700; font-size: 0.875rem;}
-main .container .pathWrap a:nth-child(2) {}
-main .container .pathWrap a:nth-child(2)::before {
+main .container .pathWrap > a {color: #707070; font-weight: 700; font-size: 0.875rem;}
+main .container .pathWrap > a:nth-child(2) {}
+main .container .pathWrap > a:nth-child(2)::before {
     content: '';
     display: inline-block;
     background-color: #000;
@@ -18,7 +18,7 @@ main .container .pathWrap a:nth-child(2)::before {
     position: relative;
     top: -4px;
 }
-main .container .pathWrap a:nth-child(2)::after {
+main .container .pathWrap > a:nth-child(2)::after {
     content: '';
     display: inline-block;
     background-color: #000;
@@ -28,16 +28,27 @@ main .container .pathWrap a:nth-child(2)::after {
     position: relative;
     top: -4px;
 }
-main .container .pathWrap .introducingMenu {color: #d50037; font-weight: 700; font-size: 0.875rem;}
-main .container .pathWrap .introducingMenu::after{
+main .container .pathWrap > a:nth-child(3)::after{
     content: '\f107';
     position: relative;
     color: #d50037;
     font-weight: 600;
 }
-main .container .pathWrap .introducingMenu option:first-child {color: #d50037; font-weight: 700; font-size: 0.875rem;}
-main .container .pathWrap .introducingMenu option {
+main .container .pathWrap > a:nth-child(3){}
+main .container .pathWrap .introducingMenu {
+    position: absolute;
+    background-color: #fff;
+    width: 145px; height: 223px;
+    display: flex; flex-flow: column nowrap;
+    color: #d50037; font-weight: 700; font-size: 0.875rem;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    padding: 10px 16px;
+}
+main .container .pathWrap .introducingMenu a:first-child {color: #d50037; font-weight: 700; font-size: 0.875rem;}
+main .container .pathWrap .introducingMenu a {
     color: #999; font-weight: 600; font-size: 0.875rem;
+    padding: 8px 0;
 }
 main .container .contents {}
 main .container .contents h1 {
