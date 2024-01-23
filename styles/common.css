@@ -96,6 +96,9 @@ header nav .gnb > li > .lnbBg {
     top: 50px;
     width: 100%;
     position: absolute;
+    /* background-color: tomato; */
+    height: 500px;
+    overflow: hidden;
 }
 header nav .gnb > li > .lnbBg > .lnbContainer {
     /* background-color: tomato; */

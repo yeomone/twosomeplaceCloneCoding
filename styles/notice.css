@@ -6,7 +6,7 @@ main .container {
 }
 main .container .pathWrap {}
 main .container .pathWrap a {color: #707070;}
-main .container .pathWrap a:nth-child(2) {color: #d50037; font-weight: 700;}
+main .container .pathWrap a:nth-child(2) {color: #d50037; font-weight: 600;}
 main .container .pathWrap a:nth-child(2)::before {
     content: '';
     display: inline-block;
