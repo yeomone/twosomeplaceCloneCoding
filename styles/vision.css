@@ -28,9 +28,15 @@ main .container .pathWrap a:nth-child(2)::after {
     position: relative;
     top: -4px;
 }
-main .container .pathWrap #introducingMenu {color: #d50037; font-weight: 700; font-size: 0.875rem;}
-main .container .pathWrap #introducingMenu option:first-child {color: #d50037; font-weight: 700; font-size: 0.875rem;}
-main .container .pathWrap #introducingMenu option {
+main .container .pathWrap .introducingMenu {color: #d50037; font-weight: 700; font-size: 0.875rem;}
+main .container .pathWrap .introducingMenu::after{
+    content: '\f107';
+    position: relative;
+    color: #d50037;
+    font-weight: 600;
+}
+main .container .pathWrap .introducingMenu option:first-child {color: #d50037; font-weight: 700; font-size: 0.875rem;}
+main .container .pathWrap .introducingMenu option {
     color: #999; font-weight: 600; font-size: 0.875rem;
 }
 main .container .contents {}
