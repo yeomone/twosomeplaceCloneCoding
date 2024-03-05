@@ -31,12 +31,16 @@ main .container .pathWrap > a:nth-child(2)::after {
 main .container .pathWrap .menueWrap {display: inline-block; position: relative;}
 main .container .pathWrap .menueWrap > a {color: #d50037; font-weight: 700; font-size: 0.875rem;}
 main .container .pathWrap .menueWrap > a::after{
+    font-family: 'Font Awesome 5 Free';
     position: relative;
     content: '\f107';
     color: #d50037;
     font-weight: 600;
+    margin-left: 3px;
+    top: 1px;
 }
 main .container .pathWrap .menueWrap .introducingMenu {
+    z-index: 2;
     position: absolute;
     background-color: #fff;
     width: 145px; height: 223px;
@@ -53,6 +57,9 @@ main .container .pathWrap .introducingMenu a:first-child {color: #d50037; font-w
 main .container .pathWrap .introducingMenu a {
     color: #999; font-weight: 600; font-size: 0.875rem;
     padding: 8px 0;
+}
+main .container .pathWrap .introducingMenu a:hover {
+    color: red; color: #000; text-decoration: underline;
 }
 main .container .contents {}
 main .container .contents h1 {
@@ -84,13 +91,19 @@ main .container .contents .missionVision .right .txt p span {
     margin-bottom: 52px;
     display: block;
 }
-main .container .contents .missionVision .left {
-    background-image: url(../images/bg_mission.svg);
-    background-position: right -80px top -80px;
-}
+main .container .contents .missionVision .left,
 main .container .contents .missionVision .right {
-    background-image: url(../images/bg_vision.svg);
-    background-position: right -20px top -20px;
+    position: relative; overflow: hidden;
+}
+main .container .contents .missionVision .left .rotateImg,
+main .container .contents .missionVision .right .rotateImg{
+    position: absolute; animation: rotate 30s linear infinite;
+}
+main .container .contents .missionVision .left .rotateImg {
+    right: -80px; top: -80px;
+}
+main .container .contents .missionVision .right .rotateImg {
+    right: -20px; top: -20px;
 }
 main .container .contents .goals {
     width: 1216px; height: 327px;
