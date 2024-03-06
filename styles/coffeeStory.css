@@ -1,9 +1,9 @@
 main {}
 main .container {
     /* background-color: yellow; */
-    max-width: 1320;
+    max-width: 1216px;
     margin: 0 auto;
-    width: 1216px;
+    width: 100%;
     font-weight: 600;
 }
 main .container .pathWrap {margin-bottom: 56px;}
