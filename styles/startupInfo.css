@@ -86,8 +86,12 @@ main .container .contents .startupInfo .investmentCosts dl dd > ul{}
 main .container .contents .startupInfo .investmentCosts dl dd > ul > li{
     padding: 24px; display: flex; justify-content: space-between; border-bottom: 1px solid #ebebeb; font-size: 1.125rem; font-weight: 500;}
 main .container .contents .startupInfo .investmentCosts dl dd > ul > li > span{font-size: 1.125rem; font-weight: 500;}
-main .container .contents .startupInfo .investmentCosts .total {background-color: #f5f5f5; display: flex; justify-content: space-between; padding: 36px 0;}
-main .container .contents .startupInfo .investmentCosts .total > div {display: flex;}
+main .container .contents .startupInfo .investmentCosts .total {background-color: #f5f5f5; display: flex; justify-content: space-between; padding: 36px 0; width: 100%;}
+main .container .contents .startupInfo .investmentCosts .total > div {display: flex; width: 80%;}
 main .container .contents .startupInfo .investmentCosts .total > div > p{padding: 0 24px; font-size: 1.5rem; font-weight: bold;}
 main .container .contents .startupInfo .investmentCosts .total > p{padding: 0 24px; font-size: 1.5rem; font-weight: bold; text-align: center;}
-main .container .contents .startupInfo .investmentCosts .total > div > p:nth-child(1){width: 7.5%;}
+main .container .contents .startupInfo .investmentCosts .total > div > p:nth-child(1){width: 9.5%;}
+main .container .contents .startupInfo .investmentCosts .total > div > p:nth-child(2){text-align: center;}
+main .container .contents .startupInfo .investmentCosts .total > p:nth-child(2){text-align: center;}
+main .container .contents .startupInfo .investmentCosts ul{margin-top: 15px;}
+main .container .contents .startupInfo .investmentCosts ul li{color: #707070; font-size: 0.875rem; line-height: 1.5; padding: 2px 0 2px 10px;}
