@@ -1,4 +1,4 @@
-/* body {background-color: cadetblue;} */
+body {overflow-x: hidden;}
 /* 본문 section 1 */
 main .bnrPage {height: 100vh;}
 main .bnrPage .bnr {}
