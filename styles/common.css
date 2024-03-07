@@ -156,28 +156,28 @@ header:hover .headerRight .lang {border: 1px solid #000; border-radius: 100px; c
 header:hover .headerRight .allMenuDefault {display: none;}
 header:hover .headerRight .allMenuHvr {display: inline;} */
 /* all menu */
-header .allMenuWrap {display: none;}
-header .allMenuWrap a {}
-header .allMenuWrap a img {}
-header .allMenuWrap .leftMenu {}
-header .allMenuWrap .leftMenu h1 {}
-header .allMenuWrap .leftMenu h1 a {}
-header .allMenuWrap .leftMenu h1 a img {}
-header .allMenuWrap .leftMenu .gnb {}
-header .allMenuWrap .leftMenu .gnb li {}
-header .allMenuWrap .leftMenu .gnb li a {}
-header .allMenuWrap .leftMenu .gnb li a .lnb {}
-header .allMenuWrap .leftMenu .gnb li a .lnb li {}
-header .allMenuWrap .leftMenu .gnb li a .lnb li a {}
-header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub {}
-header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li {}
-header .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li a {}
-header .allMenuWrap .rightMenu {}
-header .allMenuWrap .rightMenu .rightTop {}
-header .allMenuWrap .rightMenu .rightTop a {}
-header .allMenuWrap .rightMenu .rightBtm {}
-header .allMenuWrap .rightMenu .rightBtm a {}
-header .allMenuWrap .rightMenu .rightBtm a img {}
+header .allMenuContainer .allMenuWrap {display: none;}
+header .allMenuContainer .allMenuWrap a {}
+header .allMenuContainer .allMenuWrap a img {}
+header .allMenuContainer .allMenuWrap .leftMenu {}
+header .allMenuContainer .allMenuWrap .leftMenu h1 {}
+header .allMenuContainer .allMenuWrap .leftMenu h1 a {}
+header .allMenuContainer .allMenuWrap .leftMenu h1 a img {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a .lnb {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a .lnb li {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a .lnb li a {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li {}
+header .allMenuContainer .allMenuWrap .leftMenu .gnb li a .lnb li .lnbSub li a {}
+header .allMenuContainer .allMenuWrap .rightMenu {}
+header .allMenuContainer .allMenuWrap .rightMenu .rightTop {}
+header .allMenuContainer .allMenuWrap .rightMenu .rightTop a {}
+header .allMenuContainer .allMenuWrap .rightMenu .rightBtm {}
+header .allMenuContainer .allMenuWrap .rightMenu .rightBtm a {}
+header .allMenuContainer .allMenuWrap .rightMenu .rightBtm a img {}
 /* footer */
 footer * {color: #fff;}
 footer {
@@ -245,3 +245,29 @@ footer .ftrBtm .sns > a img {}
 /* 모바일 footer */
 footer .ftrBtm address .mobileAddress {display: none;}
 footer .ftrBtm address .mobileAddress span {}
+header{display: none;}
+/* 전체메뉴 */
+.allMenuContainer{z-index: 9999;}
+.allMenuContainer .allMenuWrap{
+    background-color: #222; width: 100%;height: 100vh;
+}
+.allMenuContainer .allMenuWrap .allMenuTop{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; padding: 45px;}
+.allMenuContainer .allMenuWrap .allMenuTop a{}
+.allMenuContainer .allMenuWrap .allMenuTop #allMenuClose {}
+.allMenuContainer .allMenuWrap .leftMenu{margin-left: 18%; margin-top: 2%;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb{position: relative;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li{margin-top: 40px;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > a{color: #fff; font-size: 3rem; line-height: 71px; font-weight: 800;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb{position: absolute; left: 600px; top: 0; text-align: left; display: none; padding-bottom: 8px;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li:nth-child(1) > .lnb{display: block;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li{margin-top: 32px;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li > a{color: #fff; font-size: 2rem; line-height: 48px; font-weight: 700;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li:nth-child(1) > .lnb > li .lnbSub{}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li .lnbSub > li{margin-top: 14px;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li .lnbSub > li > a{color: #ccc; font-size: 1.5rem; line-height: 36px;}
+.allMenuContainer .allMenuWrap > .rightMenu{text-align: right; position: absolute; right: 80px; bottom: 80px;}
+.allMenuContainer .allMenuWrap > .rightMenu .rightTop{padding-bottom: 30px;}
+.allMenuContainer .allMenuWrap > .rightMenu .rightTop > li{padding-top: 16px;}
+.allMenuContainer .allMenuWrap > .rightMenu .rightTop > li > a{display: block; color: #999; line-height: 36px; font-weight: 500; font-size: 1.25rem;}
+.allMenuContainer .allMenuWrap > .rightMenu .rightBtm{}
+.allMenuContainer .allMenuWrap > .rightMenu .rightBtm > a{margin-left: 16px;}
