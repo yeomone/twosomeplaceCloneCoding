@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>투썸플레이스</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,7 +31,7 @@
             <p class="totalPageNum">06</p>
         </div>
         <!-- 본문 section 1 -->
-        <section class="bnrPage">
+        <section class="section bnrPage">
             <!-- 모바일 버전에서 bnr 숨기기 -->
             <div class="bnr">
                 <a href="#" class="bnr1"></a>
@@ -46,7 +49,7 @@
             <div class="mobileBnr"></div>
         </section>
         <!-- 본문 section 2 -->
-        <section class="menuStory">
+        <section class="section menuStory">
             <div class="menuStoryContainer">
                 <h1>MENU STORY</h1>
                 <div class="contents">
@@ -92,7 +95,7 @@
             </div>
         </section>
         <!-- 본문 section 3 -->
-        <section class="aList">
+        <section class="section aList">
             <div class="contents">
                 <div class="txtWrap">
                     <div class="txt">
@@ -107,7 +110,7 @@
             </div>
         </section>
         <!-- 본문 section 4 -->
-        <section class="brandSupport">
+        <section class="section brandSupport">
             <div class="brandSupportWrap">
                 <h1>BRAND<br>SUPPORT</h1>
                 <div class="currentPage">
@@ -173,7 +176,7 @@
             </div>
         </section>
         <!-- 본문 section 5 -->
-        <section class="franchise">
+        <section class="section franchise">
             <!-- 지점 이름과 이미지 애니메이션 -->
             <div class="contents">
                 <h1>FRANCHISE</h1>
@@ -190,7 +193,7 @@
             </div>
         </section>
         <!-- 본문 section 6 -->
-        <section class="notice">
+        <section class="section notice">
             <div class="noticeWrap">
                 <div class="title">
                     <h1>NEWS<br>&NOTICE</h1>
@@ -217,5 +220,11 @@
         </section>
     </main>
     <script src="./script/common.js"></script>
+    <script>
+        $('.wrap').fullpage({
+            scrollingSpeed: 800,
+            scrollBar:false,
+        })
+    </script>
 </body>
 </html>
