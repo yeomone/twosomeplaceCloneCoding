@@ -93,3 +93,20 @@ main .container .contents #searchFrm fieldset .list .noticeList .pageBtn a {
 }
 main .container .contents #searchFrm fieldset .list .noticeList .pageBtn a[title$=currentPage] {text-decoration: 1px underline #000;}
 main .container .contents #searchFrm fieldset .list .noticeList .pageBtn a[title$=allPage] {color: #999;}
+/* notice detail */
+main .container .contents .noticeContainer {}
+main .container .contents .noticeContainer .conTop{}
+main .container .contents .noticeContainer .conTop h2{font-size: 2.5rem; font-weight: 700; line-height: 1.5;}
+main .container .contents .noticeContainer .conTop .noticeDate{margin-top: 12px; color: #333; font-size: 0.875rem;}
+main .container .contents .noticeContainer .noticeContent{padding: 40px 0 64px 0; margin-top: 36px; border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb;}
+main .container .contents .noticeContainer .noticeContent > p{font-size: 1.125rem; line-height: 1.5; color: #333;}
+main .container .contents .noticeContainer .noticeContent > .bold{font-weight: bold;}
+main .container .contents .noticeContainer .conBtm{margin: 64px auto; text-align: center;}
+main .container .contents .noticeContainer .conBtm #noticeListBtn{border: 2px solid #333; height: 64px; padding: 0 24px; font-weight: 600; min-width: 240px;}
+main .container .contents .noticeContainer .noticeListContainer{}
+main .container .contents .noticeContainer .noticeListContainer .noticeList{display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ebebeb; padding: 32px;}
+main .container .contents .noticeContainer .noticeListContainer .noticeList:last-child{border-bottom: 1px solid #ebebeb;}
+main .container .contents .noticeContainer .noticeListContainer .noticeList > em{color: #333; font-size: 0.875rem; line-height: 1; text-align: right;}
+main .container .contents .noticeContainer .noticeListContainer .noticeList > span > em{color: #707070; font-size: 0.875rem; line-height: 1;}
+main .container .contents .noticeContainer .noticeListContainer .noticeList > span > strong{font-size: 1.25rem; padding: 0 32px;}
+main .container .contents .noticeContainer .noticeListContainer .noticeList > span > strong:hover{text-decoration: underline;}
