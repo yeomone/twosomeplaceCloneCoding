@@ -1,4 +1,5 @@
 html, body,* {box-sizing:border-box;}
+body{min-width: 1920px;}
 html, body, h1, h2, h3, h4, h5, h6,
 p,em,strong,a,span,sup,sub,del,q,blockquote, code,
 ul,ol,li,dl,dt,dd,
