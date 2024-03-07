@@ -9,8 +9,20 @@ const logoDefault = document.querySelector('.default')
 const logoHvr = document.querySelector('.hvr')
 const allMenuDefault = document.querySelector('.allMenuDefault')
 const allMenuHvr = document.querySelector('.allMenuHvr')
+const allMenuContainer = document.querySelector('.allMenuContainer')
+const allMenuClose = document.querySelector('#allMenuClose')
 
-// for(let l of lnbBg){l.style.display = 'none';}
+// 전체메뉴 아이콘 클릭하면 나타나기
+allMenuHvr.addEventListener('click',()=>{
+    console.log('.')
+    allMenuContainer.style.display = 'block'
+})
+allMenuClose.addEventListener('click',()=>{
+    console.log('.')
+    allMenuContainer.style.display = 'none'
+})
+
+// 헤더에 마우스 대면 나타나기
 for(let l of lnbBg){l.style.height = '0';}
 subAllBg.style.height = '0'
 subAllBg.style.transition = 'height 0.3s'
