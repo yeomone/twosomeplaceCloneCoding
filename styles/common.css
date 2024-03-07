@@ -264,7 +264,7 @@ footer .ftrBtm address .mobileAddress span {}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li{margin-top: 32px;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li > a{color: #fff; font-size: 2rem; line-height: 48px; font-weight: 700;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li:nth-child(1) > .lnb > li .lnbSub{}
-.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li .lnbSub > li{margin-top: 14px;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li .lnbSub > li{margin-top: 16px;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li .lnbSub > li > a{color: #ccc; font-size: 1.5rem; line-height: 36px;}
 .allMenuContainer .allMenuWrap > .rightMenu{text-align: right; position: absolute; right: 80px; bottom: 80px;}
 .allMenuContainer .allMenuWrap > .rightMenu .rightTop{padding-bottom: 30px;}
