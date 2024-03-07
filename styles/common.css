@@ -258,9 +258,10 @@ footer .ftrBtm address .mobileAddress span {}
 .allMenuContainer .allMenuWrap .leftMenu{margin-left: 18%; margin-top: 2%;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb{position: relative;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li{margin-top: 40px;}
-.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > a{color: #fff; font-size: 3rem; line-height: 71px; font-weight: 800;}
-.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb{position: absolute; left: 600px; top: 0; text-align: left; display: none; padding-bottom: 8px;}
-.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li:nth-child(1) > .lnb{display: block;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > a{display: block; color: #fff; font-size: 3rem; line-height: 71px; font-weight: 800; transition:all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95); position: relative;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > a::before{content: ''; display: inline-block; position: absolute; width: 12px; height: 12px; background-color: #d50037; transition: all 0.3s cubic-bezier(0.16, 0.04, 0.03, 0.95); top: 0; left: 0; opacity: 0;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > a:hover:before{transform: translateX(-50px); opacity: 1;}
+.allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb{position: absolute; left: 600px; top: 0; text-align: left; padding-bottom: 8px;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li{margin-top: 32px;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li > .lnb > li > a{color: #fff; font-size: 2rem; line-height: 48px; font-weight: 700;}
 .allMenuContainer .allMenuWrap > .leftMenu > .gnb > li:nth-child(1) > .lnb > li .lnbSub{}

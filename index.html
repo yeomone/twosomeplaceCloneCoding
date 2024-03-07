@@ -20,7 +20,7 @@
     <div class="sideMenu">
         <a href="#" class="businessLink">기업 단체 구매<img src="./images/ico_floating.svg" alt=""></a>
         <a href="#" class="businessLink">협력업체 제안<img src="./images/ico_floating_iof.png" alt=""></a>
-        <a href="#" class="topBtn"><i class="fas fa-arrow-up"></i></a>
+        <button type="button" class="topBtn"><i class="fas fa-arrow-up"></i></button>
     </div>
     <!-- main -->
     <main class="wrap">
@@ -219,12 +219,27 @@
             </div>
         </section>
     </main>
-    <script src="./script/common.js"></script>
+    <!-- <script src="./script/common.js"></script> -->
     <script>
-        $('.wrap').fullpage({
-            scrollingSpeed: 800,
-            scrollBar:false,
+        const topBtn = document.querySelector('.topBtn')
+
+        $(document).ready(function(){
+            $('.wrap').fullpage({
+                scrollingSpeed: 800,
+                scrollBar:false,
+                afterLoad: function(anchorLink, index){
+                    if(index === 1){
+                        topBtn.style.display = 'none'
+                    }else{
+                        topBtn.style.display = 'inline'
+                    }
+                }
+            });
         })
+
+        $('.topBtn').click(function () {
+			$.fn.fullpage.moveTo(1, 1);
+		});
     </script>
 </body>
 </html>
