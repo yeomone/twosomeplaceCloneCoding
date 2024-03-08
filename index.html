@@ -142,7 +142,7 @@
     </div>
     <!-- header -->
     <header>
-        <h1 class="default"><a href="#"><img src="./images/logo_white.svg" alt="투썸플레이스"></a></h1>
+        <!-- <h1 class="default"><a href="#"><img src="./images/logo_white.svg" alt="투썸플레이스"></a></h1> -->
         <h1 class="hvr"><a href="#"><img src="./images/logo_black.svg" alt="투썸플레이스"></a></h1>
         <nav>
             <ul class="gnb">
@@ -246,7 +246,7 @@
         <!-- 언어, 전체메뉴 -->
         <div class="headerRight">
             <a href="#" class="lang">English</a>
-            <a href="#" class="allMenuDefault"><img src="./images/allMenu.svg" alt="menuBtn"></a>
+            <!-- <a href="#" class="allMenuDefault"><img src="./images/allMenu.svg" alt="menuBtn"></a> -->
             <a href="#" class="allMenuHvr"><img src="./images/ico_24_allmenu_black.svg" alt="menuBtn"></a>
         </div>
     </header>
@@ -509,16 +509,28 @@
                 afterLoad: function(anchorLink, index){
                     if(index === 1){
                         topBtn.style.display = 'none'
+                        $('.gnb > li > a').css('color', '#fff');
+                        $('.lang').css({
+                            'color' : '#fff',
+                            'border-color' : '#fff'
+                        });
+                        $('.hvr > a > img').attr('src', './images/logo_white.svg');
+                        $('.allMenuHvr > img').attr('src', './images/allmenu_black.svg');
                     }else{
                         topBtn.style.display = 'inline'
+                        $('.gnb > li > a').css('color', '');
+                        $('.lang').css({
+                            'color' : '',
+                            'border-color' : ''
+                        });
+                        $('.hvr > a > img').attr('src', './images/logo_black.svg');
+                        $('.allMenuHvr > img').attr('src', './images/ico_24_allmenu_black.svg');
                     }
                 }
             });
         })
 
-        $('.topBtn').click(function () {
-			$.fn.fullpage.moveTo(1, 1);
-		});
+        
     </script>
     
     <script src="./script/common.js"></script>

@@ -90,8 +90,6 @@ header nav .gnb > li > a {
     font-weight: bold;
     display: block;
 }
-header.index1 nav .gnb > li > a {color: #fff;}
-header.hoverColor nav .gnb > li > a {color: #000;}
 /* header nav .gnb > li > a {color: #000;} hover */
 header nav .gnb > li > .lnbBg {
     /* display: none; */

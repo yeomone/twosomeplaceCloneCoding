@@ -29,7 +29,6 @@ allMenuGnb.forEach((t,i)=>{
         lnbHide();
         allMenuGnbColor();
         allMenuGnbDefault2();
-        allMenuGnb[i].classList.add('acive')
         allMenuGnb[i].style.color = '#fff'
         allMenuGnb[i].style.transform = 'translateX(50px)'
         allMenuLnb[i].style.opacity = 1
@@ -56,17 +55,17 @@ for(let l of lnbBg){l.style.height = '0';}
 subAllBg.style.height = '0'
 subAllBg.style.transition = 'height 0.3s'
 
-logoDefault.style.display = 'block'
-logoHvr.style.display = 'none'
+// logoDefault.style.display = 'block'
+// logoHvr.style.display = 'none'
 
-allMenuDefault.style.display = 'block'
-allMenuHvr.style.display = 'none'
+// allMenuDefault.style.display = 'block'
+// allMenuHvr.style.display = 'none'
 
 header.addEventListener('mouseover',()=>{
-    logoDefault.style.display = 'none'
-    logoHvr.style.display = 'block'
-    allMenuDefault.style.display = 'none'
-    allMenuHvr.style.display = 'block'
+    // logoDefault.style.display = 'none'
+    // logoHvr.style.display = 'block'
+    // allMenuDefault.style.display = 'none'
+    // allMenuHvr.style.display = 'block'
 
     subAllBg.style.opacity = '1'
     subAllBg.style.height = '390px'
@@ -75,17 +74,17 @@ header.addEventListener('mouseover',()=>{
     // for(let l of lnbBg){l.style.display = 'block';}
     for(let l of lnbBg){l.style.height = '500px';}
     for(let l of lnbBg){l.style.transition = 'height';}
-    for(let g of gnb){g.style.color = '#000';}
-    for(let g of gnb){g.style.transition = 'color 0.3s';}
-    for(let la of lang){la.style.color = '#000';}
-    for(let la of lang){la.style.border = '1px solid #000';}
-    for(let la of lang){la.style.transition = 'all 0.3s';}
+    // for(let g of gnb){g.style.color = '#000';}
+    // for(let g of gnb){g.style.transition = 'color 0.3s';}
+    // for(let la of lang){la.style.color = '#000';}
+    // for(let la of lang){la.style.border = '1px solid #000';}
+    // for(let la of lang){la.style.transition = 'all 0.3s';}
 })
 header.addEventListener('mouseout',()=>{
-    logoDefault.style.display = 'block'
-    logoHvr.style.display = 'none'
-    allMenuDefault.style.display = 'block'
-    allMenuHvr.style.display = 'none'
+    // logoDefault.style.display = 'block'
+    // logoHvr.style.display = 'none'
+    // allMenuDefault.style.display = 'block'
+    // allMenuHvr.style.display = 'none'
 
     subAllBg.style.opacity = '0'
     subAllBg.style.height = '100px'
@@ -94,9 +93,9 @@ header.addEventListener('mouseout',()=>{
     // for(let l of lnbBg){l.style.display = 'none';}
     for(let l of lnbBg){l.style.height = '0';}
     for(let l of lnbBg){l.style.transition = 'height';}
-    for(let g of gnb){g.style.color = '#fff';}
-    for(let g of gnb){g.style.transition = 'color 0.3s';}
-    for(let la of lang){la.style.color = '#fff';}
-    for(let la of lang){la.style.border = '1px solid #fff';}
-    for(let la of lang){la.style.transition = 'all 0.3s';}
+    // for(let g of gnb){g.style.color = '#fff';}
+    // for(let g of gnb){g.style.transition = 'color 0.3s';}
+    // for(let la of lang){la.style.color = '#fff';}
+    // for(let la of lang){la.style.border = '1px solid #fff';}
+    // for(let la of lang){la.style.transition = 'all 0.3s';}
 })
