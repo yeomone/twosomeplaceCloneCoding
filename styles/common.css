@@ -91,8 +91,7 @@ header nav .gnb > li > a {
     display: block;
 }
 header.index1 nav .gnb > li > a {color: #fff;}
-header.hoverColor nav .gnb > li > a {color: #000;}
-/* header nav .gnb > li > a {color: #000;} hover */
+header.index1 nav .gnb > li > a.hoverColor {color: #000;}
 header nav .gnb > li > .lnbBg {
     /* display: none; */
     top: 50px;
@@ -139,13 +138,14 @@ header .headerRight .lang {
     font-size: 0.875rem; color: #000;
     padding: 3px 20px 6px; text-align: center;
 }
-/* header .headerRight .lang {border: 1px solid #000; border-radius: 100px; color: #000;} hover */
+header .headerRight .lang.hoverColor {
+    border: 1px solid #fff; color: #fff;
+}
 header .headerRight .allMenuDefault,
 header .headerRight .allMenuHvr {
     padding-left: 30px;
 }
 header .headerRight .allMenuDefault {}
-/* header .headerRight .allMenuHvr {display: none;} hover 했을 때 block */
 header .headerRight .allMenuHvr img {}
 header .headerRight .allMenu img {}
 /* hover 없애고 자바스크립트 적용
@@ -187,6 +187,8 @@ footer {
     background-color: #222;
     width: 100%;
     padding-bottom: 40px;
+    position: absolute;
+    bottom: 0;
 }
 /* footer 상단 */
 footer .ftrTop {
@@ -250,9 +252,9 @@ footer .ftrBtm address .mobileAddress {display: none;}
 footer .ftrBtm address .mobileAddress span {}
 /* 전체메뉴 */
 /* header{display: none;} */
-.allMenuContainer{display: none; z-index: 1000;}
+.allMenuContainer{display: none;}
 .allMenuContainer .allMenuWrap{
-    background-color: #222; width: 100%;height: 100vh;
+    background-color: #222; width: 100%;height: 100vh; z-index: 99999;
 }
 .allMenuContainer .allMenuWrap .allMenuTop{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; padding: 45px;}
 .allMenuContainer .allMenuWrap .allMenuTop a{}
