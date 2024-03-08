@@ -1,4 +1,4 @@
-body {overflow: hidden;}
+body {overflow-x: hidden;}
 /* 본문 section 1 */
 main .bnrPage {height: 100vh;}
 main .bnrPage .bnr {}
@@ -60,7 +60,7 @@ main  .menuStory .menuStoryContainer h1 {
     display: inline-block;
     font-size: 6rem; font-weight: bold;
     font-family: 'Kanit';
-    position: relative; z-index: 999;
+    position: relative; z-index: 10;
 }
 main  .menuStory .menuStoryContainer h1::after {
     background-color: #d50037; 
@@ -220,7 +220,7 @@ main .brandSupport .brandSupportWrap .currentPage {
     background-color: #000; width: 312px; padding: 15px 10px;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     position: absolute; 
-    right: 58px; bottom: 50px; z-index: 999;
+    right: 58px; bottom: 50px; z-index: 10;
 }
 main .brandSupport .brandSupportWrap .currentPage .prev {}
 main .brandSupport .brandSupportWrap .currentPage .prev img {}

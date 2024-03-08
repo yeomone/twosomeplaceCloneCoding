@@ -29,6 +29,7 @@ allMenuGnb.forEach((t,i)=>{
         lnbHide();
         allMenuGnbColor();
         allMenuGnbDefault2();
+        allMenuGnb[i].classList.add('acive')
         allMenuGnb[i].style.color = '#fff'
         allMenuGnb[i].style.transform = 'translateX(50px)'
         allMenuLnb[i].style.opacity = 1
