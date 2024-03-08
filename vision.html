@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비전체계 | 투썸플레이스</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,6 +17,238 @@
     <link rel="stylesheet" href="./styles/animation.css">
 </head>
 <body>
+    <!-- 전체메뉴 -->
+    <div class="allMenuContainer">
+        <div class="allMenuWrap" style="position: absolute;">
+            <div class="allMenuTop">
+                <a href="#"><img src="./images/logo_white.svg" alt="투썸플레이스"></a>
+                <button type="button" id="allMenuClose"><img src="./images/ico_24_allmenu_white_x.svg" alt=""></button>
+            </div>
+            <div class="leftMenu">
+                <ul class="gnb">
+                    <li>
+                        <a href="./vision.html">투썸플레이스소개</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="./vision.html">투썸플레이스</a>
+                                <ul class="lnbSub">
+                                    <li><a href="./vision.html">비전체계</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">BI</a></li>
+                                    <li><a href="#">20주년 이야기</a></li>
+                                    <li><a href="#">Recruit</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">매장</a>
+                                <ul class="lnbSub">
+                                    <li><a href="#">DT/DI</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">브랜드 브로슈어</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./coffeeStory.html">메뉴이야기</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="./coffeeStory.html">커피이야기</a>
+                            </li>
+                            <li>
+                                <a href="#">디저트 이야기</a>
+                            </li>
+                            <li>
+                                <a href="#">델리이야기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./brandSupport.html">브랜드지원</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="./brandSupport.html">어썸 페어링 플랜트</a>
+                            </li>
+                            <li>
+                                <a href="#">어썸 디저트 플랜트</a>
+                            </li>
+                            <li>
+                                <a href="#">C&D센터</a>
+                            </li>
+                            <li>
+                                <a href="#">SEP센터</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./membership.html">투썸플레이스 앱 & 멤버십</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="./membership.html">투썸플레이스 앱 소개</a>
+                            </li>
+                            <li>
+                                <a href="./membership.html">투썸플레이스 멤버십</a>
+                                <ul class="lnbSub">
+                                    <li><a href="./membership.html">멤버십 소개</a></li>
+                                    <li><a href="./membership.html">등급 및 혜택</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./startupInfo.html">가맹점 창업안내</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="./startupInfo.html">가맹점 개설 안내</a>
+                            </li>
+                            <li>
+                                <a href="#">창업설명회</a>
+                            </li>
+                            <li>
+                                <a href="#">온라인 창업상담신청</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">가맹점 전용 금융상품</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./notice.html">새소식&공지</a>
+                        <ul class="lnb">
+                            <li>
+                                <a href="./notice.html">공지사항</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="rightMenu">
+                <ul class="rightTop">
+                    <li><a href="#">기업 및 단체구매안내</a></li>
+                    <li><a href="#">협력업체 제안</a></li>
+                    <li><a href="#">가맹상담신청</a></li>
+                    <li><a href="#">사이버신문고</a></li>
+                </ul>
+                <div class="rightBtm">
+                    <a href="#" target="_blank"><img src="./images/ico_32_instagram.svg" alt="인스타그램"></a>
+                    <a href="#" target="_blank"><img src="./images/ico_32_youtube.svg" alt="유튜브"></a>
+                    <a href="#" target="_blank"><img src="./images/ico_32_f_xtwitter.svg" alt="X"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <header>
+        <h1 class="hvr"><a href="./index.html"><img src="./images/logo_black.svg" alt="투썸플레이스"></a></h1>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="vision.html">투썸플레이스 소개</a>
+                    <div class="lnbBg">
+                        <div class="lnbContainer">
+                            <ul class="lnb">
+                                <li>
+                                    <a href="vision.html">투썸플레이스</a>
+                                    <ul class="lnbSub">
+                                        <li><a href="#">비전체계</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">BI</a></li>
+                                        <li><a href="#">20주년 이야기</a></li>
+                                        <li><a href="#">Recruit</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">매장</a>
+                                    <ul class="lnbSub">
+                                        <li><a href="#">DT/DI</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">브랜드 브로슈어</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="./coffeeStory.html">메뉴이야기</a>
+                    <div class="lnbBg">
+                        <div class="lnbContainer">
+                            <ul class="lnb">
+                                <li><a href="./coffeeStory.html">커피이야기</a></li>
+                                <li><a href="#">디저트 이야기</a></li>
+                                <li><a href="#">델리이야기</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="./brandSupport.html">브랜드 지원</a>
+                    <div class="lnbBg">
+                        <div class="lnbContainer">
+                            <ul class="lnb">
+                                <li><a href="./brandSupport.html">어썸 페어링 플랜트</a></li>
+                                <li><a href="#">어썸 디저트 플랜트</a></li>
+                                <li><a href="#">C&D센터</a></li>
+                                <li><a href="#">SEP센터</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="./membership.html">투썸플레이스 앱 & 멤버십</a>
+                    <div class="lnbBg">
+                        <div class="lnbContainer">
+                            <ul class="lnb">
+                                <li><a href="#">투썸플레이스 앱 소개</a></li>
+                                <li>
+                                    <a href="#">투썸플레이스 멤버십</a>
+                                    <ul class="lnbSub">
+                                        <li><a href="./membership.html">멤버십 소개</a></li>
+                                        <li><a href="#">등급 및 혜택</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="./startupInfo.html">가맹점 창업안내</a>
+                    <div class="lnbBg">
+                        <div class="lnbContainer">
+                            <ul class="lnb">
+                                <li><a href="./startupInfo.html">가맹점 개설 안내</a></li>
+                                <li><a href="#">창업설명회</a></li>
+                                <li><a href="#">온라인 창업상담신청</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">가맹점 전용 금융상품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="./notice.html">새소식 & 공지</a>
+                    <div class="lnbBg">
+                        <div class="lnbContainer">
+                            <ul class="lnb">
+                                <li>
+                                    <a href="./notice.html">공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="subAllBg"></div>
+        </nav>
+        <!-- 언어, 전체메뉴 -->
+        <div class="headerRight">
+            <a href="#" class="lang">English</a>
+            <a href="#" class="allMenuHvr"><img src="./images/ico_24_allmenu_black.svg" alt="menuBtn"></a>
+        </div>
+    </header>
     <main>
         <div class="container">
             <div class="pathWrap">
@@ -103,7 +338,93 @@
             </div>
         </div>
     </main>
+    <!-- footer -->
+    <footer>
+        <div class="ftrTop">
+            <div class="topLeft">
+                <a href="#">기업 및 단체구매안내</a>
+                <a href="#">협력업체 제안</a>
+                <a href="#">가맹상담신청</a>
+                <a href="#">사이버신문고</a>
+            </div>
+            <!-- 모바일 topRight 숨기기 -->
+            <dl class="topRight">
+                <dt>Address</dt>
+                <dd>서울특별시 중구 을지로 170, 8층(을지로4가, 을지트윈타워)투썸플레이스(주)</dd>
+                <dt>Customer Center</dt>
+                <dd>고객센터 : 1577-4410</dd>
+            </dl>
+        </div>
+        <div class="ftrBtm">
+            <div class="btmMenu">
+                <a href="#">이용약관</a>
+                <a href="#"><em>개인정보처리방침</em></a>
+                <a href="#">위치기반서비스 이용약관</a>
+                <a href="#">이메일 무단수집거부</a>
+                <a href="#">법적고지</a>
+                <a href="#">사업자정보확인</a>
+            </div>
+            <address>
+                <!-- pc에서 mobile address 숨기기 -->
+                <span class="mobileAddress">
+                    <span>서울특별시 중구 을지로 170, 8층</span>
+                    <span>(을지로4가, 을지트윈타워)투썸플레이스(주)</span>
+                    <span>고객센터 : 1577-4410</span>
+                </span>
+                <span>대표이사 : 문영주</span>
+                <span>개인정보보호책임자 : 정병구</span>
+                <span>사업자등록번호 : 404-86-01054</span>
+                <span>통신판매업종신고증 : 제 2018-서울중구-0353호</span>
+                <span>대표이메일 : helpmaster@twosome.co.kr</span>
+                <span>Copyright &copy; 2021 A TWOSOME PLACE Co., LTD. All Rights Reserved.</span>
+            </address>
+            <div class="sns">
+                <!-- 새창열림 -->
+                <a href="#" target="_blank"><img src="./images/ico_32_instagram.svg" alt="인스타그램"></a>
+                <a href="#" target="_blank"><img src="./images/ico_32_youtube.svg" alt="유튜브"></a>
+                <a href="#" target="_blank"><img src="./images/ico_32_f_xtwitter.svg" alt="X"></a>
+            </div>
+        </div>
+    </footer>
 
+    <script src="./script/common.js"></script>
     <script src="./script/vision.js"></script>
+    <script>
+        const logo = document.querySelector('.hvr > a > img')
+        const menuImg = document.querySelector('.allMenuHvr > img')
+        
+        window.addEventListener('scroll',()=>{
+            if (window.pageYOffset >= 20){
+                header.classList.add('scrollBg')
+                header.classList.add('index1');
+                logo.classList.add('hoverColor');
+                logo.src = './images/logo_white.svg';
+                menuImg.src = './images/allmenu.svg';
+                lang.classList.add('hoverColor');
+            }else{
+                header.classList.remove('scrollBg')
+                header.classList.remove('index1');
+                logo.classList.remove('hoverColor');
+                lang.classList.remove('hoverColor');
+                logo.src = './images/logo_black.svg';
+                menuImg.src = './images/ico_24_allmenu_black.svg';
+            }
+        })
+
+        /* header.addEventListener('mouseover', function() {
+                header.classList.remove('index1');
+                logo.classList.remove('hoverColor');
+                lang.classList.remove('hoverColor');
+                logo.src = './images/logo_black.svg';
+                menuImg.src = './images/ico_24_allmenu_black.svg';
+        });
+        header.addEventListener('mouseout', function() {
+                header.classList.add('index1');
+                logo.classList.add('hoverColor');
+                logo.src = './images/logo_white.svg';
+                menuImg.src = './images/allmenu.svg';
+                lang.classList.add('hoverColor');
+        }); */
+    </script>
 </body>
 </html>

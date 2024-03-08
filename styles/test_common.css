@@ -1,5 +1,5 @@
 /* main */
-main {}
+main {padding-top: 172px;}
 /* 페이지바 */
 main .pageBar {
     z-index: 100;

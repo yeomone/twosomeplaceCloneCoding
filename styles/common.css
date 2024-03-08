@@ -2,7 +2,7 @@
 main {}
 /* 페이지바 */
 main .pageBar {
-    z-index: 100;
+    z-index: 900;
     display: flex; flex-flow: column nowrap;
     justify-content: space-between; align-items: center;
     position: fixed;
@@ -66,6 +66,7 @@ header {
     align-items: center;
     padding: 50px 65px ;
 }
+header.scrollBg {background-color: rgba(0,0,0,0.8);}
 header .default {}
 /* header .hvr {display: none;} hover 했을 때 block */
 header h1 a {}
@@ -127,6 +128,7 @@ header nav .subAllBg {
     width: 100%; height: 390px;
     z-index: -20;
     top: 0; left: 0;
+    box-shadow: 0 5px 20px rgba(120,120,120,0.1);
 }
 /* header right */
 header .headerRight {
@@ -181,14 +183,14 @@ header .allMenuContainer .allMenuWrap .rightMenu .rightBtm {}
 header .allMenuContainer .allMenuWrap .rightMenu .rightBtm a {}
 header .allMenuContainer .allMenuWrap .rightMenu .rightBtm a img {}
 /* footer */
+/* .footerWrap div{position: absolute; bottom: 0;} */
 footer * {color: #fff;}
 footer {
+    padding-bottom: 40px;
     margin-top: 240px;
     background-color: #222;
     width: 100%;
-    padding-bottom: 40px;
-    position: absolute;
-    bottom: 0;
+    position: relative; bottom: -100px;
 }
 /* footer 상단 */
 footer .ftrTop {

@@ -4,7 +4,7 @@ const lnbBg = document.querySelectorAll('.lnbBg')
 const subAllBg = document.querySelector('.subAllBg')
 const gnb = header.querySelectorAll('.gnb > li > a')
 // 로고, 언어, 전체메뉴
-const lang = document.querySelectorAll('.lang')
+const lang = document.querySelector('.lang')
 const logoDefault = document.querySelector('.default')
 const logoHvr = document.querySelector('.hvr')
 const allMenuDefault = document.querySelector('.allMenuDefault')
