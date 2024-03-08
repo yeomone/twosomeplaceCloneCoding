@@ -323,6 +323,7 @@
     <script>
         const logo = document.querySelector('.hvr > a > img')
         const menuImg = document.querySelector('.allMenuHvr > img')
+        gnb[2].style.color = '#d50037';
         
         window.addEventListener('scroll',()=>{
             if (window.pageYOffset >= 20){
@@ -332,7 +333,9 @@
                 logo.src = './images/logo_white.svg';
                 menuImg.src = './images/allmenu.svg';
                 lang.classList.add('hoverColor');
+                gnb[2].style.color = '';
             }else{
+                gnb[2].style.color = '#d50037';
                 header.classList.remove('scrollBg')
                 header.classList.remove('index1');
                 logo.classList.remove('hoverColor');
