@@ -606,7 +606,12 @@
                     $('.lang').addClass('hoverColor');
                 }
             });
+
+            $(".topBtn").on("click", function() {
+                $.fn.fullpage.moveTo(1);
+            });
         });
+        
     </script>
     
 </body>
