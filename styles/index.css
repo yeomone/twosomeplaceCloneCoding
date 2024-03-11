@@ -96,7 +96,7 @@ main  .menuStory .menuStoryContainer .contents aside > a em {
 main  .menuStory .menuStoryContainer .contents .right {
     width: 60%;  position: relative; top: -55px;
 }
-main  .menuStory .menuStoryContainer .contents .right .rightImg {width: max-content;}
+main  .menuStory .menuStoryContainer .contents .right .rightImg {overflow: hidden;}
 /* 공통 CSS */
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory,
@@ -106,7 +106,9 @@ main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory li,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory li,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  li{
-    width: 176px; margin-right: 30px; position: relative;
+    width: 176px; 
+    /* margin-right: 30px;  */
+    position: relative;
 }
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory .active,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory .active,
@@ -116,12 +118,12 @@ main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory .acti
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li > a,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li > a,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  > li > a {
-    display: block; 
+    display: block;
 }
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li > a > img,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > li > a > img,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  > li > a > img {
-    width: 100%;
+    width: 64%;
 }
 main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory,
 main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {display: none;}
@@ -143,7 +145,7 @@ main  .menuStory .menuStoryContainer .contents .right .imgInfo {
     background-color: #000; width: 424px; display: flex;
     flex-flow: row nowrap; justify-content: space-between;
     padding: 15px 20px 10px; position: absolute;
-    bottom: -15px; left: 25px;
+    bottom: -15px; left: 30px; z-index: 1;
 }
 main  .menuStory .menuStoryContainer .contents .right .imgInfo a {}
 main  .menuStory .menuStoryContainer .contents .right .imgInfo .prev {}
@@ -229,23 +231,23 @@ main .brandSupport .brandSupportWrap .currentPage {
 }
 main .brandSupport .brandSupportWrap .currentPage .prev {}
 main .brandSupport .brandSupportWrap .currentPage .prev img {}
-main .brandSupport .brandSupportWrap .currentPage .currentPlace {}
-main .brandSupport .brandSupportWrap .currentPage .currentPlace .detailed {color: #fff; font-weight: 700;}
+main .brandSupport .brandSupportWrap .currentPage .currentPlace {color: #999; font-weight: bold; text-align: center;}
+main .brandSupport .brandSupportWrap .currentPage .currentPlace .swiper-pagination-current {color: #fff; font-weight: bold;}
+main .brandSupport .brandSupportWrap .currentPage .currentPlace .swiper-pagination-total {color: #999; font-weight: bold;}
 main .brandSupport .brandSupportWrap .currentPage .currentPlace .next {}
 main .brandSupport .brandSupportWrap .currentPage .currentPlace .next img {}
 /* main .brandSupport .brandSupportWrap .contents {background-color: #999; } */
+main .brandSupport .brandSupportWrap .contents {overflow: hidden;}
 main .brandSupport .brandSupportWrap .contents ul {
     /* background-color: #d50037; */
-    width: max-content;
+    width: max-content; z-index: -1;
     margin: 0 auto; display: flex;
     position: relative; 
     left: 25%;
     top: 0;
 }
 main .brandSupport .brandSupportWrap .contents ul li {
-    display: flex; flex-flow: row nowrap;
-    position: relative; justify-content: space-between;
-    padding-right: 350px;
+    display: flex; flex-flow: row nowrap; position: relative; padding-right: 350px;
 }
 main .brandSupport .brandSupportWrap .contents ul li .sideInfo {
     transform-origin: left bottom;
@@ -253,6 +255,11 @@ main .brandSupport .brandSupportWrap .contents ul li .sideInfo {
     position: absolute;
     left: -7px; bottom: 5px;
     padding: 10px 0;
+    color: #000;
+}
+main .brandSupport .brandSupportWrap .contents ul li .sideInfo::before {
+    content: '';
+    display: inline-block; width: 40px; height: 1px; margin-right: 8px; background-color: #000; margin-bottom: 5px;
 }
 main .brandSupport .brandSupportWrap .contents ul li p {color: #333;}
 main .brandSupport .brandSupportWrap .contents ul li p img {width: 552px;}
@@ -260,6 +267,7 @@ main .brandSupport .brandSupportWrap .contents ul li .title {
     margin-left: 70px; 
     margin-top: 25%;
 }
+main .brandSupport .brandSupportWrap .contents ul li .cnd {margin-top: 20%;}
 main .brandSupport .brandSupportWrap .contents ul li .title img {}
 main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow {}
 main .brandSupport .brandSupportWrap .contents ul li .title .titleArrow h2 {}
