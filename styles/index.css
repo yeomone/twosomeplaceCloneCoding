@@ -40,7 +40,8 @@ main .bnrPage .showPage .prev {}
 main .bnrPage .showPage .prev img {}
 main .bnrPage .showPage .pageBtn {}
 main .bnrPage .showPage .pageBtn .currentPage {color: #fff; font-weight: bold;}
-main .bnrPage .showPage .pageBtn .allPage {color: #999; font-weight: bold;}
+main .bnrPage .showPage .pageBtn .swiper-pagination-current {color: #fff; font-weight: bold;}
+main .bnrPage .showPage .pageBtn .swiper-pagination-total {color: #999; font-weight: bold;}
 main .bnrPage .showPage .next {}
 main .bnrPage .showPage .next img {}
 /* 본문 section 1 모바일 버전 */

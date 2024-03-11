@@ -278,7 +278,7 @@
                     <a href="#" class="prev swiper-button-prev"><img src="./images/ico_arrow_left.svg" alt=""></a>
                     <span class="pageBtn">
                         <span class="currentPage">1 </span>
-                        <span class="allPage">/ 2</span>
+                        <!-- <span class="allPage">/ 2</span> -->
                     </span>
                     <a href="#" class="next swiper-button-next"><img src="./images/ico_arrow_right.svg" alt=""></a>
                 </div>
@@ -515,7 +515,12 @@
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             speed: 1000,
+            pagination: {
+                el: '.currentPage',
+                type: 'fraction', // 페이지 번호를 숫자로 표시
+            },
             navigation: {
+            el: '.currentPage',
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             },
