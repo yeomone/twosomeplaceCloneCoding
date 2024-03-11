@@ -258,7 +258,7 @@
     <div class="sideMenu">
         <a href="#" class="businessLink">기업 단체 구매<img src="./images/ico_floating.svg" alt=""></a>
         <a href="#" class="businessLink">협력업체 제안<img src="./images/ico_floating_iof.png" alt=""></a>
-        <button type="button" class="topBtn"><i class="fas fa-arrow-up"></i></button>
+        <a href="#" class="topBtn"><i class="fas fa-arrow-up"></i></a>
     </div>
     <div class="pageBar">
         <p class="currentPageNum">01</p>
@@ -576,11 +576,13 @@
                         $('header').addClass('index1');
                         $('.hvr > a > img').attr('src', './images/logo_white.svg');
                         $('.allMenuHvr > img').attr('src', './images/allmenu.svg');
+                        $(".topBtn").animate({height: -1}, 500);
                         // $('.lang').addClass('hoverColor');
                     } else {
                         $('header').removeClass('index1');
                         $('.hvr > a > img').attr('src', './images/logo_black.svg');
                         $('.allMenuHvr > img').attr('src', './images/ico_24_allmenu_black.svg');
+                        $(".topBtn").animate({height: 60}, 500); 
                         // $('.lang').removeClass('hoverColor');
                     }
                     $('.lang').toggleClass('hoverColor', index === 1);

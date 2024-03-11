@@ -42,7 +42,7 @@ main .container .contents .startupInfo .possess ul {display: flex; flex-flow: ro
 main .container .contents .startupInfo .possess ul li{width: calc(100% / 2 - 35px); height: 369px; padding: 0 80px; display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; border: 1px solid #d6d6d6;}
 main .container .contents .startupInfo .possess ul li img{width: 30%;}
 main .container .contents .startupInfo .possess ul li em{color: #d50037; font-weight: bold; display: block; text-align: left; width: 100%; margin-bottom: 16px; font-size: 1.125rem;}
-main .container .contents .startupInfo .possess ul li span{line-height: 1.5; font-size: 1.5rem; font-weight: bold; margin-bottom: 16px;}
+main .container .contents .startupInfo .possess ul li span{line-height: 1.5; font-size: 1.5rem; font-weight: bold; margin-bottom: 16px; white-space: nowrap;}
 main .container .contents .startupInfo .procedure {margin-bottom: 120px;}
 main .container .contents .startupInfo .procedure h2{
     font-size: 2.5rem; font-weight: 700;
