@@ -38,6 +38,7 @@ main .container .pathWrap .menueWrap > a::after{
     margin-left: 3px;
     top: 1px;
 }
+main .container .pathWrap .menueWrap .introducingMenu.show {display: flex;}
 main .container .pathWrap .menueWrap .introducingMenu {
     z-index: 2;
     position: absolute;

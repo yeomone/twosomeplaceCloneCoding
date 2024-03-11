@@ -53,6 +53,7 @@ main .container .pathWrap .menueWrap .introducingMenu {
     transform: translateX(-10%);
     display: none;
 }
+main .container .pathWrap .menueWrap .introducingMenu.show {display: flex;}
 main .container .pathWrap .introducingMenu a:first-child {color: #d50037; font-weight: 700; font-size: 0.875rem;}
 main .container .pathWrap .introducingMenu a {
     color: #999; font-weight: 600; font-size: 0.875rem;
