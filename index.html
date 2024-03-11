@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/animation.css">
 </head>
 <body>
     <!-- 전체메뉴 -->
@@ -509,8 +510,20 @@
         </section>
     </main>
     
-    <script src="./script/common.js"></script>  <!-- Swiper JS -->
+    <script src="./script/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const businessLink = document.querySelectorAll('.businessLink > a')
+        const businessLinkImg = document.querySelectorAll('.businessLink > a >img')
+        businessLink.forEach(function(t,i){
+            t.addEventListener('mouseover',()=>{
+                businessLinkImg[i].src = "./images/arrow_right_white.png"
+            })
+            t.addEventListener('mouseout',()=>{
+                businessLinkImg[i].src = "./images/arrow_right.png"
+            })
+        })
+    </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
@@ -528,9 +541,7 @@
     
         var coffeeSwiper = new Swiper(".coffeeSwiper", {
             loop: true,
-            // speed: 1000,
             slidesPerView: 1,
-            // spaceBetween: 30,
             navigation: {
                 nextEl: ".swiper-button-next2",
                 prevEl: ".swiper-button-prev2",
