@@ -102,7 +102,7 @@ main .container .contents .noticeContainer .noticeContent{padding: 40px 0 64px 0
 main .container .contents .noticeContainer .noticeContent > p{font-size: 1.125rem; line-height: 1.5; color: #333;}
 main .container .contents .noticeContainer .noticeContent > .bold{font-weight: bold;}
 main .container .contents .noticeContainer .conBtm{margin: 64px auto; text-align: center;}
-main .container .contents .noticeContainer .conBtm #noticeListBtn{border: 2px solid #333; height: 64px; padding: 0 24px; font-weight: 600; min-width: 240px;}
+main .container .contents .noticeContainer .conBtm #noticeListBtn{border: 2px solid #333; display: inline-block; padding: 20.5px 24px; font-weight: 600; min-width: 240px;}
 main .container .contents .noticeContainer .noticeListContainer{}
 main .container .contents .noticeContainer .noticeListContainer .noticeList{display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ebebeb; padding: 32px;}
 main .container .contents .noticeContainer .noticeListContainer .noticeList:last-child{border-bottom: 1px solid #ebebeb;}
