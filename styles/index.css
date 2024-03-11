@@ -2,27 +2,27 @@ body {overflow-x: hidden;}
 /* 본문 section 1 */
 main section {height: 100vh;}
 main .bnrPage {}
-main .bnrPage .bnr {}
-main .bnrPage .bnr a {}
+main .bnrPage .bnr {z-index: -9999; cursor: pointer;}
 main .bnrPage .bnr .bnr1 {
-    display: block; width: 100vw; height: 100vh;
+    display: block; 
+    width: 100vw; height: 100vh;
     background-image: url(../images/bnr1.jpg);
     background-position: center top;
     background-size: cover;
     z-index: -9999;
 }
 main .bnrPage .bnr .bnr2 {
-    display: none;
-    /* display: block;  */
+    display: block; 
     width: 100vw; height: 100vh;
     background-image: url(../images/bnr2.jpg);
     background-position: center top;
     z-index: -9999;
 }
 main .bnrPage .showPage {
-    display: flex; flex-flow: row nowrap;
+    /* display: flex; 
+    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     background-color: rgba(0,0,0,0.6);
     width: 240px;
     padding: 12px 20px 15px;
@@ -32,6 +32,10 @@ main .bnrPage .showPage {
     bottom: 30px; left: 45%;
 }
 main .bnrPage .showPage a {}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: none;
+}
 main .bnrPage .showPage .prev {}
 main .bnrPage .showPage .prev img {}
 main .bnrPage .showPage .pageBtn {}
