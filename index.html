@@ -320,7 +320,7 @@
                             <ul class="deliStory swiper-wrapper">
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_deli6.jpg" alt="호밀 B. E. L. T"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_deli2.jpg" alt="페스토 햄치즈 파니니"></a></li>
-                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli7.jpg" alt="# 베리 머치 에그"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli7.jpg" alt="베리 머치 에그"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_deli4.jpg" alt="그릴드 치킨 샐러드"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_deli8.jpg" alt="코코넛 카야 크루아상"></a></li>
                             </ul>
@@ -328,7 +328,7 @@
                         <div class="imgInfo">
                             <a href="#" class="prev swiper-button-prev2"><img src="./images/ico_arrow_left.svg" alt=""></a>
                             <span class="currentMenu">
-                                <span class="detailed">스페니쉬 연유 라떼</span>
+                                <span class="detailed"></span>
                             </span>
                             <a href="#" class="next swiper-button-next2"><img src="./images/ico_arrow_right.svg" alt=""></a>
                         </div>
@@ -557,6 +557,7 @@
         })
     </script>
     <script> /* swiper JS */
+        // section 1
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             speed: 1000,
@@ -571,6 +572,7 @@
             },
         });
     
+        // section 2
         var coffeeSwiper = new Swiper(".coffeeSwiper", {
             loop: true,
             slidesPerView: 1,
@@ -595,6 +597,25 @@
                 prevEl: ".swiper-button-prev2",
             },
         });
+        function updateDetailedInfo(swiperInstance) {
+            var currentSlide = swiperInstance.slides[swiperInstance.activeIndex];
+            var altText = currentSlide.querySelector('img').getAttribute('alt');
+            document.querySelector('.detailed').innerText = altText;
+        }
+
+        coffeeSwiper.on('slideChange', function () {
+            updateDetailedInfo(coffeeSwiper);
+        });
+
+        dessertSwiper.on('slideChange', function () {
+            updateDetailedInfo(dessertSwiper);
+        });
+
+        deliSwiper.on('slideChange', function () {
+            updateDetailedInfo(deliSwiper);
+        });
+
+        // section 4
         var brandSupportSwiper = new Swiper(".brandSupportSwiper", {
             loop: true,
             speed: 500,
