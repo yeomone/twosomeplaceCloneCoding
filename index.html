@@ -416,6 +416,15 @@
         <!-- 본문 section 5 -->
         <section class="section franchise">
             <!-- 지점 이름과 이미지 애니메이션 -->
+            <div class="animationBg"></div>
+            <div class="dotBg">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="contents">
                 <h1>FRANCHISE</h1>
                 <h2>당신의 창업 성공 스토리,<br>투썸플레이스가 함께합니다.</h2>
@@ -549,6 +558,7 @@
         });
         var brandSupportSwiper = new Swiper(".brandSupportSwiper", {
             loop: true,
+            speed: 500,
             slidesPerView: 1,
             pagination: {
                 el: '.currentPlace',

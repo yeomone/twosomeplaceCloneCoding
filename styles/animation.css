@@ -6,3 +6,15 @@
     0%{transform: translateX(-100%)}
     100%{transform: translateX(0%)}
 }
+@keyframes franchiseBg {
+    0%{transform: translateX(0%)}
+    100%{transform: translateX(-100%)}
+}
+@keyframes dotBg {
+    0%{transform: translateX(100%)}
+    100%{transform: translateX(-100%)}
+}
+@keyframes opacity {
+    0%{opacity: 1;}
+    100%{opacity: 0.5;}
+}
