@@ -134,8 +134,8 @@ main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory > 
 main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory  > li > a > img {
     width: 64%;
 }
-main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory,
-main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {display: none;}
+/* main  .menuStory .menuStoryContainer .contents .right .rightImg .dessertStory,
+main  .menuStory .menuStoryContainer .contents .right .rightImg .deliStory {display: none;} */
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory {}
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > li {}
 main  .menuStory .menuStoryContainer .contents .right .rightImg .coffeeStory > .active {}

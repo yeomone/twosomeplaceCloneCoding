@@ -304,6 +304,8 @@
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_coffee3.jpg" alt="TWG 1837 블랙티"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_coffee4.jpg" alt="스트로베리 피치 프라페"></a></li>
                             </ul>
+                        </div>
+                        <div class="rightImg swiper-container dessertSwiper">
                             <ul class="dessertStory swiper-wrapper">
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert1.jpg" alt="스트로베리 초콜릿 생크림"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert2.jpg" alt="마스카포네 티라미수"></a></li>
@@ -313,6 +315,8 @@
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert6.jpg" alt="마카롱 세트(6개입)"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert7.jpg" alt="소프트 아이스크림(컵)"></a></li>
                             </ul>
+                        </div>
+                        <div class="rightImg swiper-container deliSwiper">
                             <ul class="deliStory swiper-wrapper">
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_deli6.jpg" alt="호밀 B. E. L. T"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_deli2.jpg" alt="페스토 햄치즈 파니니"></a></li>
@@ -525,15 +529,24 @@
         const businessLink = document.querySelectorAll('.businessLink > a')
         const businessLinkImg = document.querySelectorAll('.businessLink > a >img')
         const contentsAside = document.querySelectorAll('.contents > aside > a')
+        const rightImg = document.querySelectorAll('.rightImg')
+        console.log(rightImg)
         
         const passiveA = ()=>{for (let a of contentsAside){a.classList.remove('activeA')}}
         contentsAside[0].classList.add('activeA')
-        for(let a of contentsAside){
-            a.addEventListener('click',()=>{
+        const hiderightImg = ()=>{for(let a of rightImg){a.style.display = 'none'}}
+        hiderightImg();
+        rightImg[0].style.display = 'block'
+
+        contentsAside.forEach((t, i)=>{
+            t.addEventListener('click',()=>{
                 passiveA();
-                a.classList.add('activeA')
+                t.classList.add('activeA')
+                hiderightImg();
+                rightImg[i].style.display = 'block'
             })
-        }
+        })
+
         businessLink.forEach(function(t,i){
             t.addEventListener('mouseover',()=>{
                 businessLinkImg[i].src = "./images/arrow_right_white.png"
@@ -559,6 +572,22 @@
         });
     
         var coffeeSwiper = new Swiper(".coffeeSwiper", {
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+        });
+        var dessertSwiper = new Swiper(".dessertSwiper", {
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+        });
+        var deliSwiper = new Swiper(".deliSwiper", {
             loop: true,
             slidesPerView: 1,
             navigation: {
