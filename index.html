@@ -304,22 +304,22 @@
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_coffee3.jpg" alt="TWG 1837 블랙티"></a></li>
                                 <li class="swiper-slide"><a href="#"><img src="./images/menu_coffee4.jpg" alt="스트로베리 피치 프라페"></a></li>
                             </ul>
-                            <!-- <ul class="dessertStory">
-                                <li class="active"><a href="#"><img src="./images/menu_dessert1.jpg" alt="스트로베리 초콜릿 생크림"></a></li>
-                                <li><a href="#"><img src="./images/menu_dessert2.jpg" alt="마스카포네 티라미수"></a></li>
-                                <li><a href="#"><img src="./images/menu_dessert3.jpg" alt="레드벨벳"></a></li>
-                                <li><a href="#"><img src="./images/menu_dessert4.jpg" alt="뉴욕 치즈 케이크"></a></li>
-                                <li><a href="#"><img src="./images/menu_dessert5.jpg" alt="아이스 박스"></a></li>
-                                <li><a href="#"><img src="./images/menu_dessert6.jpg" alt="마카롱 세트(6개입)"></a></li>
-                                <li><a href="#"><img src="./images/menu_dessert7.jpg" alt="소프트 아이스크림(컵)"></a></li>
+                            <ul class="dessertStory swiper-wrapper">
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert1.jpg" alt="스트로베리 초콜릿 생크림"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert2.jpg" alt="마스카포네 티라미수"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert3.jpg" alt="레드벨벳"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert4.jpg" alt="뉴욕 치즈 케이크"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert5.jpg" alt="아이스 박스"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert6.jpg" alt="마카롱 세트(6개입)"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_dessert7.jpg" alt="소프트 아이스크림(컵)"></a></li>
                             </ul>
-                            <ul class="deliStory">
-                                <li class="active"><a href="#"><img src="./images/menu_deli6.jpg" alt="호밀 B. E. L. T"></a></li>
-                                <li><a href="#"><img src="./images/menu_deli2.jpg" alt="페스토 햄치즈 파니니"></a></li>
-                                <li><a href="#"><img src="./images/menu_deli7.jpg" alt="# 베리 머치 에그"></a></li>
-                                <li><a href="#"><img src="./images/menu_deli4.jpg" alt="그릴드 치킨 샐러드"></a></li>
-                                <li><a href="#"><img src="./images/menu_deli8.jpg" alt="코코넛 카야 크루아상"></a></li>
-                            </ul> -->
+                            <ul class="deliStory swiper-wrapper">
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli6.jpg" alt="호밀 B. E. L. T"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli2.jpg" alt="페스토 햄치즈 파니니"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli7.jpg" alt="# 베리 머치 에그"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli4.jpg" alt="그릴드 치킨 샐러드"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./images/menu_deli8.jpg" alt="코코넛 카야 크루아상"></a></li>
+                            </ul>
                         </div>
                         <div class="imgInfo">
                             <a href="#" class="prev swiper-button-prev2"><img src="./images/ico_arrow_left.svg" alt=""></a>
@@ -524,9 +524,16 @@
     <script>
         const businessLink = document.querySelectorAll('.businessLink > a')
         const businessLinkImg = document.querySelectorAll('.businessLink > a >img')
-        /* topBtn.addEventListener('click',function(){
-            window.scrollTo({left:0, top:0})
-        }) */
+        const contentsAside = document.querySelectorAll('.contents > aside > a')
+        console.log(contentsAside)
+
+        const passiveA = ()=>{for (let a of contentsAside){a.classList.remove('activeA')}}
+        for(let a of contentsAside){
+            a.addEventListener('click',()=>{
+                passiveA();
+                a.classList.add('activeA')
+            })
+        }
         businessLink.forEach(function(t,i){
             t.addEventListener('mouseover',()=>{
                 businessLinkImg[i].src = "./images/arrow_right_white.png"
@@ -536,7 +543,7 @@
             })
         })
     </script>
-    <script>
+    <script> /* swiper JS */
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             speed: 1000,
@@ -574,7 +581,7 @@
             },
         });
     </script>
-    <script>
+    <script> /* fullPage JS */
         $(document).ready(function(){
             let currentSectionIndex = 0;
         
