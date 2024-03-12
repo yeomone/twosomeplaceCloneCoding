@@ -525,9 +525,9 @@
         const businessLink = document.querySelectorAll('.businessLink > a')
         const businessLinkImg = document.querySelectorAll('.businessLink > a >img')
         const contentsAside = document.querySelectorAll('.contents > aside > a')
-        console.log(contentsAside)
-
+        
         const passiveA = ()=>{for (let a of contentsAside){a.classList.remove('activeA')}}
+        contentsAside[0].classList.add('activeA')
         for(let a of contentsAside){
             a.addEventListener('click',()=>{
                 passiveA();
