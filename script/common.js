@@ -60,7 +60,7 @@ header.addEventListener('mouseover',()=>{
     subAllBg.style.height = '390px'
     subAllBg.style.transition = 'all 0.3s'
 
-    for(let l of lnbBg){l.style.height = '500px';}
+    for(let l of lnbBg){l.style.height = '300px';}
     for(let l of lnbBg){l.style.transition = 'height';}
 })
 header.addEventListener('mouseout',()=>{

@@ -67,6 +67,10 @@ main .container .contents #searchFrm fieldset .list .noticeList .noticeContents 
     font-size: 1.5rem; font-weight: 500;
     display: flex; align-items: center;
 }
+main .container .contents #searchFrm fieldset .list .noticeList .noticeContents a .left img {
+    width: 30px; margin-left: 15px; display: none;
+}
+main .container .contents #searchFrm fieldset .list .noticeList .noticeContents a:hover .left img {display: inline;}
 main .container .contents #searchFrm fieldset .list .noticeList .noticeContents a .left em {
     font-size: 0.875rem; font-weight: 700;
     margin-right: 40px;
