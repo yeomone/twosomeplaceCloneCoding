@@ -357,6 +357,7 @@
                 gnb[5].style.color = '';
 
                 header.addEventListener('mouseover', function() {
+                        gnb[5].style.color = '#d50037';
                         header.classList.remove('index1');
                         logo.classList.remove('hoverColor');
                         lang.classList.remove('hoverColor');
@@ -364,6 +365,7 @@
                         menuImg.src = './images/ico_24_allmenu_black.svg';
                 });
                 header.addEventListener('mouseout', function() {
+                        gnb[5].style.color = '';
                         header.classList.add('index1');
                         logo.classList.add('hoverColor');
                         logo.src = './images/logo_white.svg';
@@ -378,6 +380,22 @@
                 lang.classList.remove('hoverColor');
                 logo.src = './images/logo_black.svg';
                 menuImg.src = './images/ico_24_allmenu_black.svg';
+
+                header.addEventListener('mouseover', function() {
+                        header.classList.remove('index1');
+                        logo.classList.remove('hoverColor');
+                        lang.classList.remove('hoverColor');
+                        logo.src = './images/logo_black.svg';
+                        menuImg.src = './images/ico_24_allmenu_black.svg';
+                });
+                header.addEventListener('mouseout', function() {
+                        gnb[5].style.color = '#d50037';
+                        header.classList.remove('index1');
+                        logo.classList.remove('hoverColor');
+                        lang.classList.remove('hoverColor');
+                        logo.src = './images/logo_black.svg';
+                        menuImg.src = './images/ico_24_allmenu_black.svg';
+                });
             }
         })
     </script>

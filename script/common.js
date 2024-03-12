@@ -16,9 +16,6 @@ const allMenuGnb = allMenuContainer.querySelectorAll('.gnb > li > a')
 const allMenuGnbBg = allMenuContainer.querySelector('.allMenuWrap > .leftMenu')
 const allMenuLnb = allMenuContainer.querySelectorAll('.allMenuWrap > .leftMenu > .gnb > li > .lnb ')
 
-topBtn.addEventListener('click',function(){
-    window.scrollTo({left:0, top:0})
-})
 // 전체메뉴 - gnb에 마우스오버 시 lng 나타나기
 const lnbHide = () => {for(let i of allMenuLnb){i.style.opacity = 0;}}
 const allMenuGnbColor = () => {for(let i of allMenuGnb){i.style.color = '#707070';}}

@@ -524,6 +524,9 @@
     <script>
         const businessLink = document.querySelectorAll('.businessLink > a')
         const businessLinkImg = document.querySelectorAll('.businessLink > a >img')
+        /* topBtn.addEventListener('click',function(){
+            window.scrollTo({left:0, top:0})
+        }) */
         businessLink.forEach(function(t,i){
             t.addEventListener('mouseover',()=>{
                 businessLinkImg[i].src = "./images/arrow_right_white.png"
