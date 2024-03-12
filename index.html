@@ -589,7 +589,7 @@
                         $('header').addClass('index1');
                         $('.hvr > a > img').attr('src', './images/logo_white.svg');
                         $('.allMenuHvr > img').attr('src', './images/allmenu.svg');
-                        $(".topBtn").animate({height: -1}, 500);
+                        $('.topBtn').animate({height: -1}, 500);
                         // $('.lang').addClass('hoverColor');
                     } else {
                         $('header').removeClass('index1');
@@ -598,6 +598,10 @@
                         $(".topBtn").animate({height: 60}, 500); 
                         // $('.lang').removeClass('hoverColor');
                     }
+                    $('.currentPageNum').text("0" + index);
+                    $('.currentBar').css('height', (index * 16.6) + '%');
+                    if(index === 7){$('.currentPageNum').text("06")}
+                    if(index === 7)$('.currentBar').css('height', '100%');
                     $('.lang').toggleClass('hoverColor', index === 1);
                 }
             });
